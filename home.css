@@ -1,0 +1,30 @@
+body {
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+
+.outside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mermaid {
+    float: center;
+    width: 50%;
+    text-align: center;
+}
+
+.citation{
+    color: #205b9f;
+  }
+
+table {
+    text-align: left;
+}

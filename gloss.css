@@ -1,0 +1,43 @@
+div.wrapper {
+  /* background: hsla(55, 99%, 80%, 50); */
+  padding: 5px;
+ overflow:auto;
+    margin: 1em 0;
+}
+
+ol.sentence {
+  display:inline;
+  list-style-type: none;
+
+}
+
+ol.sentence li[lang=es]{
+   /* font-weight:bold; */
+   list-style-type: none;
+
+}
+
+
+ol.sentence li[lang=en_MORPH]{
+   /* font-family: monospace; */
+   list-style-type: none;
+
+
+}
+
+ol.word {
+ padding: .5em;
+ /* margin-bottom: .5em; */
+ background: white;
+ float:left;
+ /* border: 1px dotted #ccc; */
+ display: inline-block;
+}
+
+p.translation {
+  width: 90%;
+  float: left;
+  display: inline-block;
+  padding: .5em;
+  margin-top: -1em;
+}
