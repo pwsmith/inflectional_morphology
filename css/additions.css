@@ -26,7 +26,6 @@ body {
     border: 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0); }
 
-  }
 
 
 
@@ -40,12 +39,7 @@ body {
     text-align: left
 }
   
-  .reveal .front {
-    /* background-color: #09d0b7; */
-    /* background-color: #f2cc72; */
-    /* #eeb70d; */
-      /* font-family: 'Signika', sans-serif; */
-  }
+ 
   
   span.italic {
     font-style: italic;
@@ -64,9 +58,7 @@ body {
       justify-content: space-between;
     }
   
-  .reveal .level2 {
-    /* background-color: white; */
-  }
+
   
   .reveal .level1 {
     /* background-color: #09d0b7; */
@@ -111,11 +103,7 @@ body {
       font-family: 'Signika', sans-serif;
   }
   
-  .reveal .exe {
-    border-collapse: collapse;
-    border-bottom: none;
-    text-color: red;
-  }
+ 
   
   .reveal .small {
     font-size: 0.75em;
@@ -233,6 +221,14 @@ body {
 
 span.emphasisgreen {
   color: #039f64;
+}
+
+span.emphasismagenta {
+  color: #9e039f;
+}
+
+span.emphasisorange {
+  color: #cc7810;
 }
 
 .center-image {

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta name='author' content='Pete'>
+<title>Woche 1: Einführung</title>
+<meta name='apple-mobile-web-app-capable' content='yes'>
+<meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui'>
+<link rel='stylesheet' href='css/reset.css'>
+<link rel='stylesheet' href='css/reveal.css'>
+<link rel='stylesheet' type='text/css' href='js/leaflet/leaflet.css' />
+<script type='text/javascript' src='js/leaflet/leaflet.js'></script>
+<script type='text/javascript' src='js/leaflet/leafletembed.js'></script>
+<script type='text/javascript' src='js/leaflet/numbermap.js'></script>
+<link rel='stylesheet' href='css/theme/sof.css' id='theme'>
+<!-- Printing and PDF exports -->
+<script>
+var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
+<!--[if lt IE 9]>
+<script src='reveal.js/lib/js/html5shiv.js'></script>
+<![endif]-->
+<link rel='stylesheet' href='css/additions.css'>
+</head>
+<body>
+<div class='reveal'>
+<div class='slides'>
+<section class='front' id='title-slide'>
+<div class='front_container'>
+<div class='front_info'>
+<h1 class='title'>Woche 1: Einführung</h1>
+<p class='subtitle'>Typologie der Flexionsmorphologie</p>
+<p class='author'>Peter W. Smith</p>
+<p class='date'>18.10.2019</p>
+</div>
+<div class='front_logo'>
+<img class='logo' src='GU-Logo-schwarz.png'>
+</div>
+</div>
+</section>
+<section>
+<section class='title-slide slide level1'>
+<h1>Organisatorisches</h1>
+</section>
+
+<section>
+<h2>Wichtiges</h2>
+<ul>
+    <li>Kontakt: p.smith@em.uni-frankfurt.de</li>
+    <li>Raum-Nr. IG 4.256</li>
+    <li>Sprechstunde: Mi. 10.30 – 11.30</li>
+    <li>OLAT:</li>
+</ul>
+</section>
+
+<section>
+<h2>Themenliste</h2>
+<table>
+    <thead>
+        <th>Wochen</th>
+        <th>Thema</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Einführung</td>
+        </tr>
+        <tr>
+            <td>2 – 3</td>
+            <td>Numerus</td>
+        </tr>
+        <tr>
+            <td>4 – 5</td>
+            <td>Person</td>
+        </tr>
+        <tr>
+            <td>6 – 8</td>
+            <td>Kasus</td>
+        </tr>
+        <tr>
+            <td>9 – 10</td>
+            <td>Genus</td>
+        </tr>
+        <tr>
+            <td>11 – 14</td>
+            <td>Suppletion</td>
+        </tr>
+    </tbody>
+</table>
+</section>
+
+<section>
+<h2>Wichtiges</h2>
+<ul>
+    <li>Es gibt <span class='boldface'>keine Sitzung</span> am 15. November.</li>
+    <li><span class='boldface'>Teilnahmeschein:</span></li>
+    <ul>
+        <li>Sie müßen mindestens <span class='boldface'>zehn</span> Vorlesungen besuchen.</li>
+        <li>Referat</li>
+    </ul>
+    <li><span class='boldface'>Leistungsnachweis:</span></li>
+    <ul>
+        <li>Kleine Hausarbeit <span class='boldface'>und</span> Referat (20–30 Minuten).</li>
+        <li>Sie müßen mindestens <span class='boldface'>zehn</span> Vorlesungen besuchen.</li>
+    </ul>
+</ul>
+</section>
+</section>
+
+<section>
+<section class='title-slide slide level1'>
+<h1>Morphologie und Wortbildung</h1>
+</section>
+
+<section>
+<h2>Was ist morphologie?</h2>
+<ul>
+    <li>Die Studium von Wortbildung.</li>
+    <li>Sprache ist ein <span class="fragment emphasisgreen">diskretes</span> <span class="fragment emphasismagenta">kombinatorisches</span> <span class="fragment emphasisorange">System.</span></li>
+    <li class='fragment'><span class='emphasisgreen'>Diskret</span>: definierbaren Teilen.</li>
+    <li class='fragment'><span class='emphasismagenta'>Kombinatorisch</span>: diskreten Elemente werden miteinander kombiniert, um eine größere Einheit zu bilden.</li>
+        <li class='fragment'><span class='emphasisorange'>System</span>: grammatische Regeln, die wir Sprachen
+            beschreiben und erklären können.</li>
+</ul>
+<aside class="notes">
+<ul>
+    <li>Diskret: definierbaren Teilen. Kategorisch und nicht gradient.</li>
+    <li>Kombinatorisch: die diskreten Elemente werden miteinander kombiniert, um eine größere Einheit zu bilden.</li>
+    <li>System: systematisch und nicht willkürlich. Regelsystem.</li>
+</ul>    
+</aside>
+</section>
+
+<section>
+<h2>Sprachsystem: Bausteine</h2>
+<ul>
+    <li>Phonologie: die Bildung von dem Bau der Laute</li>
+    <ul>
+        <li>Die Bausteine sind <span class='boldface'>Phoneme</span></li>
+        <li>/k+a+t+z+ə/ = Katze</li>
+    </ul>
+    <li class='fragment'>Syntax: die Bildung von dem Satzbau
+    <ul>
+        <li>Die Bausteine sind <span class='boldface'>Wörter</span></li>
+        <li>[ [ Die Wissenschaftlerin ] [ kauft [ Bücher ] ]</li>
+    </ul></li>
+    <li class='fragment'>Morphologie: die Bildung von Wörter
+    <ul>
+        <li>Die Bausteine sind <span class='boldface'>Morpheme</span></li>
+        <li>Freund+lich+keit</li>
+    </ul></li>
+</ul>
+</section>
+
+<section>
+<h2>Morpheme</h2>
+<ul>
+    <li>Das Morphem ist eine distinktive Einheit, ein morphologischer Bestandteil eines Wortes. </li>
+    <li>Es ist das kleinstes bedeutungstragendes Element der Sprache.</li>
+    <li>Die Morpheme können als phonologisch-semantische Basiselemente nicht mehr in kleinere Einheiten zerlegt werden.</li>
+</ul>
+</section>
+
+<section>
+    <h2>Morpheme</h2>
+<div class='center-image'>
+    <div>
+        <object style='width: 90%;' data='images/wk1_moerderin.svg' type='image/svg+xml'></object>
+    </div>
+</div>
+
+</section>
+</section>
+
+<section>
+<section class='title-slide slide level1'>
+<h1>Überblick</h1>
+</section>
+
+<section>
+<h2>Flexionsmorphologie der Substantive</h2>
+<ul>
+    <li>Es gibt vier Hauptarten von Flexionsmorphologie für Substantive.</li>
+    <ul>
+        <li>Numerus</li>
+        <li>Person</li>
+        <li>Kasus</li>
+        <li>Genus</li>
+    </ul>
+</ul>
+</section>
+
+<section>
+<h2>Numerus</h2>
+<ul>
+    <li>Der Numerus kodiert die Zahl der Referenten für einen Ausdruck.</li>
+    <li>Deutschen und Englischen: singular~plural.</li>
+</ul>
+<p class='whitespace'></p>
+<div class='container'>
+    <div class='col'>
+            <table>
+                <caption>Deutsch</caption>
+                    <thead>
+                        <th></th>
+                        <th>Singular</th>
+                        <th>Plural</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>ich</td>
+                            <td>wir</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>du</td>
+                            <td>ihr</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>er/sie/es</td>
+                            <td>sie</td>
+                        </tr>
+                    </tbody>
+                </table>
+    </div>
+    <div class='col'>
+            <table>
+                <caption>English</caption>
+                    <thead>
+                        <th></th>
+                        <th>Singular</th>
+                        <th>Plural</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>I</td>
+                            <td>we</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>you</td>
+                            <td>you</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>he/she/it</td>
+                            <td>they</td>
+                        </tr>
+                    </tbody>
+                </table>
+    </div>
+</div>
+
+</section>
+
+<section>
+<h2>Numerus</h2>
+<ul>
+    <li>Es gibt andere Systeme.</li>
+    <li>Zum Beispiel: Amele.</li>
+    <li>Es gibt ein regularen Singular.</li>
+</ul>
+<div class='gloss-outer-container'>
+<div class='gloss-number-counter'><p class='ex'></p></div>
+<div class='gloss_example'>
+    <ol class='sentence'>
+        <li>
+            <ol class='word'>
+                <li lang=target>Dana</li>
+                <li lang=en_MORPH>man</li>
+            </ol>
+        </li>
+        <li>
+            <ol class='word'>
+                <li lang=target>ho-<span class='emphasisgreen'>i</span>-a</li>
+                <li lang=en_MORPH>kommen<span class='sc'>-3sg-past</span></li>
+            </ol>
+        </li>
+    </ol>
+
+<p class='translation'>'Der Mann ist gekommen.'</p>
+</div>
+</div>
+<ul>
+    <li>Aber, es gibt zwei nicht-singular Formen.</li>
+</ul>
+</section>
+
+<section>
+<h2>Numerus</h2>
+<ul>
+    <li>Ein Form — das Dual — hat die Bedeutung ,,zwei X''.</li>
+</ul>
+<div class='gloss-outer-container'>
+<div class='gloss-number-counter'><p class='ex'></p></div>
+<div class='gloss_example'>
+    <ol class='sentence'>
+        <li>
+            <ol class='word'>
+                <li lang=target>Dana</li>
+                <li lang=en_MORPH>man</li>
+            </ol>
+        </li>
+        <li>
+            <ol class='word'>
+                <li lang=target>ho-<span class='emphasisgreen'>si</span>-a</li>
+                <li lang=en_MORPH>kommen<span class='sc'>-3dl-past</span></li>
+            </ol>
+        </li>
+    </ol>
+
+<p class='translation'>'Die zwei Männer sind gekommen.'</p>
+</div>
+</div>
+<ul>
+    <li>Das Plural bedeutet ,,mehr als zwei X.''</li>
+</ul>
+<div class='gloss-outer-container'>
+        <div class='gloss-number-counter'><p class='ex'></p></div>
+        <div class='gloss_example'>
+            <ol class='sentence'>
+                <li>
+                    <ol class='word'>
+                        <li lang=target>Dana</li>
+                        <li lang=en_MORPH>man</li>
+                    </ol>
+                </li>
+                <li>
+                    <ol class='word'>
+                        <li lang=target>ho-<span class='emphasisgreen'>ig</span>-a</li>
+                        <li lang=en_MORPH>kommen<span class='sc'>-3pl-past</span></li>
+                    </ol>
+                </li>
+            </ol>
+        
+        <p class='translation'>'Die Männer (x > 2) sind gekommen.'</p>
+        </div>
+        </div>
+</section>
+
+<section>
+<h2>Person</h2>
+<ul>
+    <li>Person kodiert Beteiligung von Referenten im Diskurs.</li>
+    <li>Im Deutschen gibt es drei Personen.</li>
+</ul>
+<!-- <p class='whitespace'></p> -->
+
+</section>
+
+<section>
+<h2>Person: Deutsch</h2>
+<table>
+        <caption>Person im Deutschen</caption>
+        <thead>
+            <th>Person</th>
+    <th>Singular</th>
+    <th>Plural</th>
+            <th>Bedeutung</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+    <td>ich</td>
+    <td>wir</td>
+                <td>Sprecher (und Andere)</td>
+            </tr>
+            <tr>
+    <td>2</td>
+    <td>du</td>
+    <td>ihr</td>
+                <td>Zuhörer (und Andere, <span class='boldface'>nicht</span> Sprecher)</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>er/sie/es</td>
+                <td>sie</td>
+                <td>Weder Sprecher noch Zuhörer (und Andere)</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+<h2>Person: Marori</h2>
+<table class='stretch'>
+    <caption>Maori</caption>
+    <thead>
+<!-- <th>Person</th> -->
+<th>Singular</th>
+<th>Plural</th>
+        <th>Referenz Bedeutung</th>
+    </thead>
+    <tbody>
+        <tr>
+<!-- <td>1.<span class='sc'>excl</span></td> -->
+<td>au</td>
+<td>taatou</td>
+            <td>Sprecher (und Andere, <span class='boldface'>nicht</span> Zuhörer)</td>
+        </tr>
+        <tr>
+<!-- <td>1.<span class='sc'>incl</span></td> -->
+<td>—</td>
+<td>maatou</td>
+            <td>Sprecher, Zuhörer (und Andere)</td>
+        </tr>
+        <tr>
+            <!-- <td>2</td> -->
+            <td>koe</td>
+            <td>koorua</td>
+            <td>Zuhörer (und Andere, <span class='boldface'>nicht</span> Sprecher)</td>
+        </tr>
+        <tr>
+<!-- <td>3</td> -->
+<td>ia</td>
+<td>raatou</td>
+            <td>Weder Sprecher noch Zuhörer (und Andere)</td>
+        </tr>
+    </tbody>
+</table>
+</section>
+
+<section>
+<h2>Person: Sanapaná</h2>
+<table>
+    <caption>Sanapaná</caption>
+    <thead>
+        <th>Person</th>
+<th>Singular</th>
+<th>Plural</th>
+<th>Bedeutung</th>
+    </thead>
+<tbody>
+    <tr>
+        <td>1</td>
+        <td>ko'o</td>
+        <td>enenko</td>
+        <td>Sprecher (und Andere)</td>
+    </tr>
+    <tr>
+        <td>￢1</td>
+        <td>hleja</td>
+        <td>hlenga</td>
+        <td>Nicht der Sprecher (und Andere)</td>
+    </tr>
+</tbody>
+</table>
+</section>
+
+<section>
+<h2>Kasus: Deutsch</h2>
+<ul>
+    <li>Im Deutschen gibt es Kasus.</li>
+    <li>Der Kasus markiert die Funktion des Nomens im Satz.</li>
+</ul>
+<table>
+    <thead>
+<th></th>
+<th>Maskulinum</th>
+<th>Femininum</th>
+        <th>Neutrum</th>
+    </thead>
+    <tbody>
+        <tr>
+<td>Nominativ</td>
+<td>der</td>
+<td>die</td>
+            <td>das</td>
+        </tr>
+        <tr>
+            <td>Akkusativ</td>
+            <td>den</td>
+            <td>die</td>
+            <td>das</td>
+        </tr>
+        <tr>
+            <td>Dativ</td>
+<td>dem</td>
+<td>der</td>
+<td>dem</td>
+        </tr>
+        <tr>
+<td>Gentiv</td>
+<td>des</td>
+<td>der</td>
+            <td>des</td>
+        </tr>
+    </tbody>
+</table>
+</section>
+
+<section>
+<h2>Kasus</h2>
+<ul>
+        <li>
+            <a href="http://wals.info/feature/49A#2/16.6/148.2">Wie viele Kasus?</a>
+        </li>
+        <ul>
+            <li>0 = Walisisch</li>
+            <li>2 = Englisch, Irisch, Berber usw.</li>
+            <li>3 = Griechisch, Pashto, Semelai</li>
+            <li>4 = Deutsch, Isländisch, Fur</li>
+            <li>5 = Lettisch, Serbo-Kroatisch</li>
+            <li>6-7 = Türkisch, Saami, Bengali</li>
+            <li>8-9 = Burushashki, Greenlandic, Nivkh</li>
+            <li>10+ = Finnisch, Baskisch, Ungarisch</li>
+        </ul>
+        
+</ul>
+</section>
+
+<section>
+<h2>Genus</h2>
+<ul>
+    <li>Substantive werden o in Klassen gruppiert.</li>
+</ul>
+<table>
+    <caption>Drei Genera im Deutschen</caption>
+    <thead>
+<td>Maskulinum</td>
+<td>Femininum</td>
+<td>Neutrum</td>
+    </thead>
+    <tbody>
+        <tr>
+<td>Der Mann</td>
+<td>Die Frau</td>
+<td>Das Auto</td>
+        </tr>
+        <tr>
+<td>der Garten</td>
+<td>Die Wissenschaft</td>
+<td>das Gebaüde</td>
+        </tr>
+    </tbody>
+</table>
+</section>
+
+<section>
+<h2>Kurze Typologie von Genus</h2>
+<ul>
+    <li>
+        Es gbit Sprache mit:
+    </li>
+    <ul>
+        <li>Kein Genus (z.B. Finnisch)</li>
+        <li>Zwei Klassen (z.B. romanischen Sprachen wie Italienisch)</li>
+        <li>Drei Klassen (z.B. Deutsch, Englisch)</li>
+        <li><a href='https://wals.info/feature/30A#2/25.5/148.2'>Teil von der Sprachen haben mehr</a>:</li>
+        <ul>
+            <li>
+                Swahili und Chichewa haben 18.
+            </li>
+<li>
+    Hunzib und Ingush haben 5.
+</li>
+<li>
+    Dyirbal hat 4: Männlich, Weiblich, Gemüse und Andere
+</li>
+        </ul>
+    </ul>
+</ul>
+</section>
+</section>
+<script src='js/reveal.js'></script>
+<script>
+// Full list of configuration options available at:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+// Display the page number of the current slide
+slideNumber: true,
+// Push each slide change to the browser history
+history: true,
+// Vertical centering of slides
+center: false,
+// Transition speed
+transitionSpeed: 'slow', // default/fast/slow
+viewDistance: 200,
+menu: {
+themes: 
+[
+{ name: 'Sof', theme: 'css/theme/sof.css'},
+{ name: 'Moon', theme: 'css/theme/moon.css'},
+{ name: 'Blood', theme: 'css/theme/blood.css'},
+{ name: 'Beige', theme: 'css/theme/beige.css'},
+{ name: 'Night', theme: 'css/theme/night.css'},
+{ name: 'League', theme: 'css/theme/league.css'},
+{ name: 'Serif', theme: 'css/theme/serif.css'},
+{ name: 'Solarized', theme: 'css/theme/solarized.css'},
+{ name: 'White', theme: 'css/theme/white.css'},
+{ name: 'Sky', theme: 'css/theme/sky.css'},
+]
+},
+// Optional reveal.js plugins
+dependencies: [
+{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+{ src: 'plugin/zoom-js/zoom.js', async: true },
+{ src: 'plugin/notes/notes.js', async: true },
+{ src: 'plugin/reveal.js-menu/menu.js' },
+]
+});
+</script>
+<script src='js/mermaid.js'></script>
+<script>
+mermaid.initialize({
+theme: 'forest',
+logLevel: 3,
+flowchart: { curve: 'basis' },
+});
+</script>
+</body>
+</html>
