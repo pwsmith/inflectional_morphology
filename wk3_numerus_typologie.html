@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Pete" />
+    <title>Woche 3: Numerus Typologie</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" type="text/css" href="js/leaflet/leaflet.css" />
+    <script type="text/javascript" src="js/leaflet/leaflet.js"></script>
+    <script type="text/javascript" src="js/leaflet/leafletembed.js"></script>
+    <script type="text/javascript" src="js/leaflet/numbermap.js"></script>
+    <link rel="stylesheet" href="css/theme/sof.css" id="theme" />
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.type = "text/css";
+        link.href = window.location.search.match(/print-pdf/gi) ? "css/print/pdf.css" : "reveal.js/css/print/paper.css";
+        document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+    <!--[if lt IE 9]>
+      <script src="reveal.js/lib/js/html5shiv.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/additions.css" />
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section class="front" id="title-slide">
+                <div class="front_container">
+                    <div class="front_info">
+                        <h1 class="title">Numerus Typologie</h1>
+                        <p class="subtitle">Woche 3</p>
+                        <p class="author">Peter W. Smith</p>
+                        <p class="date">01.11.2019</p>
+                    </div>
+                    <div class="front_logo">
+                        <img class="logo" src="GU-Logo-schwarz.png" />
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <section class="title-slide slide level1">
+                    <h1>Hello</h1>
+                </section>
+
+                <section>
+                    <h2>Letztes Woche</h2>
+                    <ul>
+                        <li>Wir benutzen Merkmale.</li>
+                        <li>[±Singular], [±Minimal], [±Wenig]</li>
+                        <li>Semantische Beduetung</li>
+                        <li>Kombinierbar</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Kombinationen</h2>
+                    <table>
+                        <thead>
+                            <th>Merkmale</th>
+                            <th>Numerus</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>[+Singular]</td>
+                                <td>singular</td>
+                            </tr>
+                            <tr>
+                                <td>[−Singular]</td>
+                                <td>plural</td>
+                            </tr>
+                            <tr>
+                                <td>[−Singular, +Minimal]</td>
+                                <td>dual</td>
+                            </tr>
+                            <tr>
+                                <td>[−Singular, −Minimal, +Minimal]</td>
+                                <td>trial</td>
+                            </tr>
+                            <tr>
+                                <td>[−Singular, +Wenig]</td>
+                                <td>paukal</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+            <section>
+                <section class='title-slide slide level1'>
+                    <h1>Typologie</h1>
+                </section>
+
+                <section>
+                    <h2>General Number</h2>
+                    <ul>
+                        <li>"General Number" ist vage.</li>
+                        <li>Das Substantiv wird ohne Markierung benutzt, und hat eine Reihe von Bedeutungen.</li>
+                        <li>z.B. <a href="https://glottolog.org/resource/languoid/id/bais1246">Bayso</a></li>
+                    </ul>
+                    <div class='gloss-outer-container'>
+                        <div class='gloss-number-counter'>
+                            <p class='ex'></p>
+                        </div>
+                        <div class='gloss_example'>
+                            <ol class='sentence'>
+                                <li>
+                                    <ol class='word'>
+                                        <li lang=target>lúban</li>
+                                        <li lang=en_MORPH>lion</li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <ol class='word'>
+                                        <li lang=target>foofe</li>
+                                        <li lang=en_MORPH>beobachten<span class='sc'>.1sg</span></li>
+                                    </ol>
+                                </li>
+                            </ol>
+
+                            <p class='translation'>'Ich habe Löwen beobachtet.'</p>
+                        </div>
+                    </div>
+                    <ul class="fragment">
+                        <li>Es könnte einen Löwe, zwei Löwen, drei Löwen sein.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>General Number</h2>
+                    <ul>
+                        <li>Bayso hat auch Numerussuffixe, mit klaren Bedeutungen.</li>
+                    </ul>
+                    <div class='gloss-outer-container'>
+                        <div class='gloss-number-counter'>
+                            <p class='ex'></p>
+                        </div>
+                        <div class='gloss_example'>
+                            <ol class='sentence'>
+                                <li>
+                                    <ol class='word'>
+                                        <li lang=target>lúban-titi</li>
+                                        <li lang=en_MORPH>lion<span class='sc'>-sg</span></li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <ol class='word'>
+                                        <li lang=target>foofe</li>
+                                        <li lang=en_MORPH>beobachten<span class='sc'>.1sg</span></li>
+                                    </ol>
+                                </li>
+                            </ol>
+
+                            <p class='translation'>'Ich habe einen Löwe beobachtet.'</p>
+                        </div>
+                    </div>
+                    <div class='gloss-outer-container'>
+                        <div class='gloss-number-counter'>
+                            <p class='ex'></p>
+                        </div>
+                        <div class='gloss_example'>
+                            <ol class='sentence'>
+                                <li>
+                                    <ol class='word'>
+                                        <li lang=target>lúban-jool</li>
+                                        <li lang=en_MORPH>lion<span class='sc'>-pl</span></li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <ol class='word'>
+                                        <li lang=target>foofe</li>
+                                        <li lang=en_MORPH>beobachten<span class='sc'>.1sg</span></li>
+                                    </ol>
+                                </li>
+                            </ol>
+
+                            <p class='translation'>'Ich habe Löwen beobachtet.'</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>General Number</h2>
+                    <ul>
+                        <li>General number always groups with the singular if anything.</li>
+                        <li>There is no overall system whereby general number is the same as plural, and the singular
+                            has overt marking.</li>
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <section class='title-slide slide level1'>
+                    <h1>Quadral</h1>
+                </section>
+
+                <section>
+                    <h2>Sursurunga</h2>
+                    <ul>
+                        <li>Is there a quadral in Sursurunga?</li>
+                        <li>Show how it's a difference amongst paucals.</li>
+                        <li>Also show for the other languages.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Quadral</h2>
+                    <table>
+                        <thead>
+                            <th></th>
+                            <th>sg</th>
+                            <th>dl</th>
+                            <th>tl</th>
+                            <th>qd</th>
+                            <th>pl</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class='sc'>1excl</span></td>
+                                <td>iau</td>
+                                <td>giur</td>
+                                <td>gimtul</td>
+                                <td>gimhat</td>
+                                <td>gim</td>
+                            </tr>
+                            <tr>
+                                <td><span class='sc'>1incl</span></td>
+                                <td>—</td>
+                                <td>gitar</td>
+                                <td>gittul</td>
+                                <td>githat</td>
+                                <td>git</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>iáu</td>
+                                <td>guar</td>
+                                <td>gamtul</td>
+                                <td>gamhat</td>
+                                <td>gam</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>-i/on/ái</td>
+                                <td>diar</td>
+                                <td>ditul</td>
+                                <td>dihat</td>
+                                <td>di</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+
+            <section>
+                <section class='title-slide slide level1'>
+                    <h1>Composed Numbers</h1>
+                </section>
+
+                <section>
+                    <h2>Breton</h2>
+                    <ul>
+                        <li>Show how Breton works.</li>
+                    </ul>
+                </section>
+
+<section>
+<h2>Breton</h2>
+<div class='gloss-outer-container'>
+<div class='gloss-number-counter'><p class='ex'></p></div>
+<div class='gloss_example'>
+    <ol class='sentence'>
+        <li>
+            <ol class='word'>
+                <li lang=target>lagad</li>
+                <li lang=en_MORPH>Auge</li>
+            </ol>
+        </li>
+    </ol>
+
+<p class='translation'>'Auge'</p>
+</div>
+</div>
+<div class='gloss-outer-container'>
+<div class='gloss-number-counter'><p class='ex'></p></div>
+<div class='gloss_example'>
+    <ol class='sentence'>
+        <li>
+            <ol class='word'>
+                <li lang=target>daou-lagad</li>
+                <li lang=en_MORPH><span class='sc'>dual</span>-Auge</li>
+            </ol>
+        </li>
+    </ol>
+
+<p class='translation'>'(zwei) Auge'</p>
+</div>
+</div>
+<div class='gloss-outer-container fragment'>
+<div class='gloss-number-counter'><p class='ex'></p></div>
+<div class='gloss_example'>
+    <ol class='sentence'>
+        <li>
+            <ol class='word'>
+                <li lang=target>daou-lagad-où</li>
+                <li lang=en_MORPH><span class='sc'>dual</span>-Auge-<span class='sc'>pl</span></li>
+            </ol>
+        </li>
+    </ol>
+
+<p class='translation'>'Paare Augen'</p>
+</div>
+</div>
+</section>
+                <section>
+                    <h2>Hopi</h2>
+                    <ul>
+                        <li>Also how Hopi composes duals.</li>
+                        <li>And how it is different from Breton.</li>
+                    </ul>
+                </section>
+            </section>
+
+            <section>
+                <section class='title-slide slide level1'>
+                    <h1>Hierarchies</h1>
+                </section>
+
+                <section>
+                    <h2>Hierarchies</h2>
+                    <ul>
+                        <li>Show with diagrammes.</li>
+                        <li>Further discuss how our feature system worked this out.</li>
+                    </ul>
+                </section>
+            </section>
+
+        </div>
+    </div>
+    <script src="js/reveal.js"></script>
+    <script>
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            // Display the page number of the current slide
+            slideNumber: true,
+            // Push each slide change to the browser history
+            history: true,
+            // Vertical centering of slides
+            center: false,
+            // Transition speed
+            transitionSpeed: "slow", // default/fast/slow
+            viewDistance: 200,
+            menu: {
+                themes: [{ name: "Sof", theme: "css/theme/sof.css" }, { name: "Moon", theme: "css/theme/moon.css" }, { name: "Blood", theme: "css/theme/blood.css" }, { name: "Beige", theme: "css/theme/beige.css" }, { name: "Night", theme: "css/theme/night.css" }, { name: "League", theme: "css/theme/league.css" }, { name: "Serif", theme: "css/theme/serif.css" }, { name: "Solarized", theme: "css/theme/solarized.css" }, { name: "White", theme: "css/theme/white.css" }, { name: "Sky", theme: "css/theme/sky.css" }]
+            },
+            // Optional reveal.js plugins
+            dependencies: [
+                {
+                    src: "lib/js/classList.js",
+                    condition: function () {
+                        return !document.body.classList;
+                    }
+                },
+                { src: "plugin/zoom-js/zoom.js", async: true },
+                { src: "plugin/notes/notes.js", async: true },
+                { src: "plugin/reveal.js-menu/menu.js" }
+            ]
+        });
+    </script>
+    <script src="js/mermaid.js"></script>
+    <script>
+        mermaid.initialize({
+            theme: "forest",
+            logLevel: 3,
+            flowchart: { curve: "basis" }
+        });
+    </script>
+</body>
+
+</html>
