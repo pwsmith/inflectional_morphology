@@ -295,7 +295,7 @@ span.emphasisorange {
   ol.word {
    /* padding: .5em; */
    margin-bottom: .5em;
-   background: white;
+   /* background: white; */
    float:left;
    /* border: 1px dotted #ccc; */
    display: inline-block;
