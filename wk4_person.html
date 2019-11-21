@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='author' content='Pete'>
+    <title>Person Typologie</title>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+    <meta name='viewport'
+        content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui'>
+    <link rel='stylesheet' href='css/reset.css'>
+    <link rel='stylesheet' href='css/reveal.css'>
+    <link rel='stylesheet' type='text/css' href='js/leaflet/leaflet.css' />
+    <script type='text/javascript' src='js/leaflet/leaflet.js'></script>
+    <script type='text/javascript' src='js/leaflet/leafletembed.js'></script>
+    <script type='text/javascript' src='js/leaflet/numbermap.js'></script>
+    <link rel='stylesheet' href='css/theme/sof.css' id='theme'>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <!--[if lt IE 9]>
+<script src='reveal.js/lib/js/html5shiv.js'></script>
+<![endif]-->
+    <link rel='stylesheet' href='css/additions.css'>
+</head>
+
+<body>
+    <div class='reveal'>
+        <div class='slides'>
+            <section class='front' id='title-slide'>
+                <div class='front_container'>
+                    <div class='front_info'>
+                        <h1 class='title'>Person:</h1>
+                        <p class='subtitle'>Typologie</p>
+                        <p class='author'>Peter W. Smith</p>
+                        <p class='date'>22 November 2019</p>
+                    </div>
+                    <div class='front_logo'>
+                        <img class='logo' src='GU-Logo-schwarz.png'>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <section class='title-slide slide level1'>
+                    <h1>Einleitung: Person</h1>
+                </section>
+
+                <section>
+                    <h2>Person</h2>
+                    <ul>
+                        <li>Was bedeutet Person?</li>
+                        <li>Im Deutschen:</li>
+                    </ul>
+                    <table>
+                        <caption>Deutsch</caption>
+                        <thead>
+                            <th></th>
+                            <th>Singular</th>
+                            <th>Plural</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>ich</td>
+                                <td>wir</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>du</td>
+                                <td>ihr</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>er/sie/es</td>
+                                <td>sie</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+
+                <section>
+                    <h2>Person: Referenten</h2>
+                    <ul>
+                        <li>Wichtige Begriffe:</li>
+                        <li class="fragment"><span class='italic'>S</span>: Sprecher (speaker)</li>
+                        <li class="fragment"><span class='italic'>A</span>: Zuhörer (addressee)</li>
+                        <li class="fragment"><span class='italic'>O</span>: Andere Person (weder Sprecher noch
+                            Zuhörer).</li>
+                        <p class='whitespace'></p>
+                        <li class="fragment">Im Deutschen gibt es ein Unterschied zwischen alle diese Personen.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Person: Referenten</h2>
+                    <ul>
+                        <li>Im Maori ist es anders</li>
+                    </ul>
+                    <table class='stretch'>
+                        <caption>Maori</caption>
+                        <thead>
+                            <!-- <th>Person</th> -->
+                            <th>Singular</th>
+                            <th class="fragment" data-fragment-index="2">Plural</th>
+                            <th>Referenz Bedeutung</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <!-- <td>1.<span class='sc'>excl</span></td> -->
+                                <td>au</td>
+                                <td class="fragment" data-fragment-index="2">taatou</td>
+                                <td>Sprecher (und Andere, <span class="fragment" data-fragment-index="2"><span
+                                            class='boldface'>nicht</span> Zuhörer</span>)</td>
+                            </tr>
+                            <tr class="fragment" data-fragment-index="2">
+                                <!-- <td>1.<span class='sc'>incl</span></td> -->
+                                <td class="fragment" data-fragment-index="2">—</td>
+                                <td class="fragment" data-fragment-index="2">maatou</td>
+                                <td class="fragment" data-fragment-index="2">Sprecher, Zuhörer (und Andere)</td>
+                            </tr>
+                            <tr>
+                                <!-- <td>2</td> -->
+                                <td>koe</td>
+                                <td class="fragment" data-fragment-index="2">koorua</td>
+                                <td>Zuhörer (und Andere, <span class='boldface'>nicht</span> Sprecher)</td>
+                            </tr>
+                            <tr>
+                                <!-- <td>3</td> -->
+                                <td>ia</td>
+                                <td class="fragment" data-fragment-index="2">raatou</td>
+                                <td>Weder Sprecher noch Zuhörer (und Andere)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h2>Person: Sanapaná</h2>
+                    <table>
+                        <caption>Sanapaná</caption>
+                        <thead>
+                            <th>Person</th>
+                            <th>Singular</th>
+                            <th>Plural</th>
+                            <th>Bedeutung</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>ko'o</td>
+                                <td>enenko</td>
+                                <td>Sprecher (und Andere)</td>
+                            </tr>
+                            <tr>
+                                <td>￢1</td>
+                                <td>hleja</td>
+                                <td>hlenga</td>
+                                <td>Nicht der Sprecher (und Andere)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+            <section>
+            <section class='title-slide slide level1'>
+            <h1>Divisions: Singular</h1>
+            </section>
+            
+            <section>
+            <h2>Mögliche Muster</h2>
+            <img src="images/cysouw_sing_syncretisms.png" alt="">
+            </section>
+
+        
+            <section class='title-slide slide level1'>
+            <h1>Sb</h1>
+            </section>
+            
+            
+            <section>
+            <h2>Niederländisch</h2>
+            <div class='gloss-outer-container'>
+            <div class='gloss-number-counter'><p class='ex'></p></div>
+            <div class='gloss_example'>
+                <ol class='sentence'>
+                    <li>
+                        <ol class='word'>
+                            <li lang=target>ik</li>
+                            <li lang=en_MORPH>ich</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <ol class='word'>
+                            <li lang=target>loop</li>
+                            <li lang=en_MORPH>lauf<span class='sc'>.1sg</span></li>
+                        </ol>
+                    </li>
+                </ol>
+            
+            <p class='translation'>'Ich laufe'</p>
+            </div>
+            </div>
+            <div class='gloss-outer-container'>
+            <div class='gloss-number-counter'><p class='ex'></p></div>
+            <div class='gloss_example'>
+                <ol class='sentence'>
+                    <li>
+                        <ol class='word'>
+                            <li lang=target>jij</li>
+                            <li lang=en_MORPH>du</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <ol class='word'>
+                            <li lang=target>loop-t</li>
+                            <li lang=en_MORPH>laufen<span class='sc'>-2sg</span></li>
+                        </ol>
+                    </li>
+                </ol>
+            
+            <p class='translation'>'Du läufst'</p>
+            </div>
+            </div>
+            <div class='gloss-outer-container'>
+            <div class='gloss-number-counter'><p class='ex'></p></div>
+            <div class='gloss_example'>
+                <ol class='sentence'>
+                    <li>
+                        <ol class='word'>
+                            <li lang=target>hij/zij/het</li>
+                            <li lang=en_MORPH>er/sie/es</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <ol class='word'>
+                            <li lang=target>loop-t</li>
+                            <li lang=en_MORPH>laufen<span class='sc'>-3sg</span></li>
+                        </ol>
+                    </li>
+                </ol>
+            
+            <p class='translation'>'Er/sie/es läuft.'</p>
+            </div>
+            </div>
+            </section>
+            
+            
+            <section>
+            <h2>Lengua</h2>
+            <img width="75%"; src="images/wk3_lengua.png" alt="">
+            </section>
+
+            
+            <section>
+            <h2>Chitimacha</h2>
+            <img width="66%"; src="images/wk3_chitimacha.png" alt="">
+            </section>
+
+            <section class='title-slide slide level1'>
+            <h1>Sc</h1>
+            </section>
+            
+            
+            
+            <section>
+            <h2>Spanisch</h2>
+            <img src="images/wk3_spanish.png" alt="">
+            </section>
+            
+            <section>
+            <h2>Koiari</h2>
+            <img src="images/wk3_koiari.png" alt="">
+            </section>
+            
+            <section>
+            <h2>Ika</h2>
+            <img src="images/wk3_ika.png" alt="">
+            </section>
+
+            <section class="level1"><h1>Sd</h1></section>
+
+            
+            <section>
+            <h2>English</h2>
+            <ul>
+                <li>Im Englischen, gibt es homophanie im Verben zwischen 1 + 2.</li>
+            </ul>
+            <p class='ex'>I walk</p>
+            <p class='ex'>You walk</p>
+            <p class='ex'>He/she/it walks</p>
+            </section>
+            
+            <section>
+            <h2>Hunzib</h2>
+            <img src="images/wk3_hunzib.png" alt="">
+            </section>
+            
+            <section>
+            <h2>Waskia</h2>
+            <img src="images/wk3_waskia.png" alt="">
+            </section>
+            
+            <section>
+            <h2>Nez Perce</h2>
+            <img src="images/wk3_nezperce.png" alt="">
+            </section>
+            
+            <section class="level1">Se</section>
+            
+            <section>
+            <h2>Waskia</h2>
+            <img src="images/wk3_waskia2.png" alt="">
+            </section>
+        </section>
+        </div>
+    </div>
+    <script src='js/reveal.js'></script>
+    <script>
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            // Display the page number of the current slide
+            slideNumber: true,
+            // Push each slide change to the browser history
+            history: true,
+            // Vertical centering of slides
+            center: false,
+            // Transition speed
+            transitionSpeed: 'slow', // default/fast/slow
+            viewDistance: 200,
+            menu: {
+                themes:
+                    [
+                        { name: 'Sof', theme: 'css/theme/sof.css' },
+                        { name: 'Moon', theme: 'css/theme/moon.css' },
+                        { name: 'Blood', theme: 'css/theme/blood.css' },
+                        { name: 'Beige', theme: 'css/theme/beige.css' },
+                        { name: 'Night', theme: 'css/theme/night.css' },
+                        { name: 'League', theme: 'css/theme/league.css' },
+                        { name: 'Serif', theme: 'css/theme/serif.css' },
+                        { name: 'Solarized', theme: 'css/theme/solarized.css' },
+                        { name: 'White', theme: 'css/theme/white.css' },
+                        { name: 'Sky', theme: 'css/theme/sky.css' },
+                    ]
+            },
+            // Optional reveal.js plugins
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+                { src: 'plugin/zoom-js/zoom.js', async: true },
+                { src: 'plugin/notes/notes.js', async: true },
+                { src: 'plugin/reveal.js-menu/menu.js' },
+            ]
+        });
+    </script>
+    <script src='js/mermaid.js'></script>
+    <script>
+        mermaid.initialize({
+            theme: 'forest',
+            logLevel: 3,
+            flowchart: { curve: 'basis' },
+        });
+    </script>
+</body>
+
+</html>
