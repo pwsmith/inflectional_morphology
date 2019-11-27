@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='author' content='Pete'>
+    <title>Die Merkmale von Person</title>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+    <meta name='viewport'
+        content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui'>
+    <link rel='stylesheet' href='css/reset.css'>
+    <link rel='stylesheet' href='css/reveal.css'>
+    <link rel='stylesheet' type='text/css' href='js/leaflet/leaflet.css' />
+    <script type='text/javascript' src='js/leaflet/leaflet.js'></script>
+    <script type='text/javascript' src='js/leaflet/leafletembed.js'></script>
+    <script type='text/javascript' src='js/leaflet/numbermap.js'></script>
+    <link rel='stylesheet' href='css/theme/sof.css' id='theme'>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <!--[if lt IE 9]>
+<script src='reveal.js/lib/js/html5shiv.js'></script>
+<![endif]-->
+    <link rel='stylesheet' href='css/additions.css'>
+</head>
+
+<body>
+    <div class='reveal'>
+        <div class='slides'>
+            <section class='front' id='title-slide'>
+                <div class='front_container'>
+                    <div class='front_info'>
+                        <h1 class='title'>Die Merkmale von Person</h1>
+                        <p class='subtitle'>Universalien in Person</p>
+                        <p class='author'>Peter W. Smith</p>
+                        <p class='date'>29.11.2019</p>
+                    </div>
+                    <div class='front_logo'>
+                        <img class='logo' src='GU-Logo-schwarz.png'>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <section class='title-slide slide level1'>
+                    <h1>Letze Woche: Personmuster</h1>
+                </section>
+
+            </section>
+
+            <section>
+                <section class='title-slide slide level1'>
+                    <h1>Bobaljik (2008)</h1>
+                </section>
+
+                <section>
+                    <h2>Meta Persons</h2>
+                    <table>
+                        <thead>
+                            <th>Gruppe</th>
+                            <th>Beschreibung</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>S</td>
+                                <td>Nur Sprecher(s)</td>
+                            </tr>
+                            <tr>
+                                <td>S+A</td>
+                                <td>nur Sprecher(s) und Zuhörer(s)</td>
+                            </tr>
+                            <tr>
+                                <td>S+O</td>
+                                <td>Sprecher(s) und andere</td>
+                            </tr>
+                            <tr>
+                                <td>A</td>
+                                <td>Zuhörer(s)</td>
+                            </tr>
+                            <tr>
+                                <td>A+O</td>
+                                <td>Zuhörer(s) und andere</td>
+                            </tr>
+                            <tr>
+                                <td>O</td>
+                                <td>nur andere</td>
+                            </tr>
+                            <tr>
+                                <td>S+A+O</td>
+                                <td>'wir': komplete</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h2>Meta Persons</h2>
+                    <table>
+                        <thead>
+                            <th>Möglich</th>
+                            <th>Attestiert</th>
+                            <th>Merkmale</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>S+A</td>
+                                <td rowspan="2">Inklusiv</td>
+                                <td rowspan="2">[+S,+Zuhörer]</td>
+                            </tr>
+                            <tr>
+                                <td>S+A+O</td>
+                            </tr>
+                            <tr>
+                                <td>S</td>
+                                <td rowspan="2">Exklusiv</td>
+                                <td rowspan="2">[+Sprecher,−Zuhörer]</td>
+                            </tr>
+                            <tr>
+                                <td>S+O</td>
+                            </tr>
+                            <tr>
+                                <td>A</td>
+                                <td rowspan="2">Zweite Person</td>
+                                <td rowspan="2">[−Sprecher,+Zuhörer]</td>
+                            </tr>
+                            <tr>
+                                <td>A+O</td>
+                            </tr>
+                            <tr>
+                                <td>O</td>
+                                <td>Dritte Person</td>
+                                <td>[−Sprecher,−Zuhörer]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+
+                <section>
+                    <h2>Schluss</h2>
+                    <ul>
+                        <li>Die traditionelle System mit drei Merkmale erzeugt zu viel.</li>
+                        <li>Eine System mit zwei Merkmale geht.</li>
+                    </ul>
+                </section>
+            </section>
+
+        </div>
+    </div>
+    <script src='js/reveal.js'></script>
+    <script>
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            // Display the page number of the current slide
+            slideNumber: true,
+            // Push each slide change to the browser history
+            history: true,
+            // Vertical centering of slides
+            center: false,
+            // Transition speed
+            transitionSpeed: 'slow', // default/fast/slow
+            viewDistance: 200,
+            menu: {
+                themes:
+                    [
+                        { name: 'Sof', theme: 'css/theme/sof.css' },
+                        { name: 'Moon', theme: 'css/theme/moon.css' },
+                        { name: 'Blood', theme: 'css/theme/blood.css' },
+                        { name: 'Beige', theme: 'css/theme/beige.css' },
+                        { name: 'Night', theme: 'css/theme/night.css' },
+                        { name: 'League', theme: 'css/theme/league.css' },
+                        { name: 'Serif', theme: 'css/theme/serif.css' },
+                        { name: 'Solarized', theme: 'css/theme/solarized.css' },
+                        { name: 'White', theme: 'css/theme/white.css' },
+                        { name: 'Sky', theme: 'css/theme/sky.css' },
+                    ]
+            },
+            // Optional reveal.js plugins
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+                { src: 'plugin/zoom-js/zoom.js', async: true },
+                { src: 'plugin/notes/notes.js', async: true },
+                { src: 'plugin/reveal.js-menu/menu.js' },
+            ]
+        });
+    </script>
+    <script src='js/mermaid.js'></script>
+    <script>
+        mermaid.initialize({
+            theme: 'forest',
+            logLevel: 3,
+            flowchart: { curve: 'basis' },
+        });
+    </script>
+</body>
+
+</html>
