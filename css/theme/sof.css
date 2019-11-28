@@ -33,8 +33,8 @@ body {
 }
 
 .reveal {
-  /* font-family: "Linux Biolinum O", sans-serif; */
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Linux Biolinum O", sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
   font-size: 40px;
   font-weight: normal;
   color: #000;
@@ -211,7 +211,7 @@ flex: none;
 .reveal p {
   margin: 20px 0;
   line-height: 1.3;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  /* font-family: 'Fira Sans Condensed', sans-serif; */
 }
 
 /* Ensure certain elements are never larger than the slide itself */
