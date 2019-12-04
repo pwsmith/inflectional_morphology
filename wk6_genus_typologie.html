@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='author' content='Pete'>
+    <title>Genus</title>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+    <meta name='viewport'
+        content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui'>
+    <link rel='stylesheet' href='css/reset.css'>
+    <link rel='stylesheet' href='css/reveal.css'>
+    <link rel='stylesheet' type='text/css' href='js/leaflet/leaflet.css' />
+    <script type='text/javascript' src='js/leaflet/leaflet.js'></script>
+    <script type='text/javascript' src='js/leaflet/leafletembed.js'></script>
+    <script type='text/javascript' src='js/leaflet/numbermap.js'></script>
+    <link rel='stylesheet' href='css/theme/sof.css' id='theme'>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <!--[if lt IE 9]>
+<script src='reveal.js/lib/js/html5shiv.js'></script>
+<![endif]-->
+    <link rel='stylesheet' href='css/additions.css'>
+</head>
+
+<body>
+    <div class='reveal'>
+        <div class='slides'>
+            <section class='front' id='title-slide'>
+                <div class='front_container'>
+                    <div class='front_info'>
+                        <h1 class='title'>Genus</h1>
+                        <p class='subtitle'>Typologie</p>
+                        <p class='author'>Peter W. Smith</p>
+                        <p class='date'>06.12.2019</p>
+                    </div>
+                    <div class='front_logo'>
+                        <img class='logo' src='GU-Logo-schwarz.png'>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <section class='title-slide slide level1'>
+                    <h1>Einleitung</h1>
+                </section>
+
+                <section>
+                    <h2>Was bedeutet ,,Genus''?</h2>
+                    <ul>
+                        <li><a class='citation'
+                                href='https://books.google.de/books/about/A_Course_in_Modern_Linguistics.html?id=DNYrAAAAMAAJ&redir_esc=y'>Hockett
+                                (1958: 231)</a>: "Genders are classes of nouns reflected in the behaviour of associated
+                            words."</li>
+                        <li>Hello</li>
+                        <li>Something else again?</li>
+                    </ul>
+
+                </section>
+            </section>
+
+            <section>
+                <section class='title-slide slide level1'>
+                    <h1>Semantische Systeme</h1>
+                </section>
+                <section class="level1">
+                    <h2>Streng semantisch</h2>
+                </section>
+                <section>
+                    <h2>Tamil</h2>
+                    <table>
+                        <caption>Semantische Klassifizierung im Tamil</caption>
+                        <thead>
+                            <th>Criterion</th>
+                            <th>Genus</th>
+                            <th>Beispiele</th>
+                            <th>Gloss</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">Gott oder männlicher Mensh</td>
+                                <td rowspan="2">Maskulinum ('male rational')</td>
+                                <td>aaɳ</td>
+                                <td>Mann</td>
+                            </tr>
+                            <tr>
+                                <td>civaɴ</td>
+                                <td><a href="https://de.wikipedia.org/wiki/Shiva">Shiva</a></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Göttin oder weibliche Mensch</td>
+                                <td rowspan="2">Femininum ('female rational')</td>
+                                <td>peɳ</td>
+                                <td>Frau</td>
+                            </tr>
+                            <tr>
+                                <td>kaaɭi</td>
+                                <td><a href="https://de.wikipedia.org/wiki/Kali_(G%C3%B6ttin)">Kali</a></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Andere</td>
+                                <td rowspan="2">Neutrum</td>
+                                <td>maram</td>
+                                <td>Baum</td>
+                            </tr>
+                            <tr>
+                                <td>viiʈu</td>
+                                <td>Haus</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section class="level1">
+                    <h2>Überwiegend semantisch</h2>
+                </section>
+
+                <section>
+                    <h2>Überwiegend semantisch</h2>
+                    <ul>
+                        <li>Semantisch begründet, mit Ausnahmen.</li>
+                        <li>z.B. <a href="https://glottolog.org/resource/languoid/id/zand1248">Zande</a>:</li>
+                        <ul>
+                            <li>Vier Genera:</li>
+                            <ul>
+                                <li>Maskulinum</li>
+                                <li>Femininum</li>
+                                <li>Tiere</li>
+                                <li>Rest</li>
+                            </ul>
+                        </ul>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Zande</h2>
+                    <table>
+                        <caption>Genus in Zande</caption>
+                        <thead>
+                            <th>Kriterium</th>
+                            <th>Genus</th>
+                            <th>Beispiel</th>
+                            <th>Bedeutung</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Männliche Mensch</td>
+                                <td>Maskulinum</td>
+                                <td>kumba</td>
+                                <td>Mann</td>
+                            </tr>
+                            <tr>
+                                <td>weibliche Mensch</td>
+                                <td>Femininum</td>
+                                <td>dia</td>
+                                <td>Ehefrau</td>
+                            </tr>
+                            <tr>
+                                <td>Andere lebend</td>
+                                <td>Tier</td>
+                                <td>nya</td>
+                                <td>Tier</td>
+                            </tr>
+                            <tr>
+                                <td>Rest</td>
+                                <td>Neutrum</td>
+                                <td>bambu</td>
+                                <td>Haus</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h2>Zande: Ausnahmen</h2>
+                    <ul>
+                        <li><span class="emphasisgreen">Himmlische Dinge</span>: <span class='italic'>diwi</span>
+                            'Mond', <span class='italic'>wangu</span> 'Regenbogen'.</li>
+                        <li class="fragment"><span class="emphasisgreen">Metallische Dinge</span>: <span
+                                class='italic'>bande</span> 'Hammer', <span class='italic'>tongo</span> 'Ring'.</li>
+                        <li class="fragment"><span class="emphasisgreen">Essbare Pflanzen</span>: <span
+                                class='italic'>abangbe</span> 'Süßkartoffel', <span class='italic'>baundu</span>
+                            'Erbsen'.</li>
+                        <li class="fragment"><span class='emphasisgreen'>Nicht-metallische Dinge</span>: <span
+                                class='italic'>mbasa</span> 'Pfeife', <span class='italic'>badupo</span> 'Ball'.</li>
+                        <li class="fragment"><span class='emphasisgreen'>Andere</span>: <span class='italic'>ze</span>
+                            'Narbe'.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Ket</h2>
+                    <table>
+                        <caption>Genus in Ket</caption>
+                        <thead>
+                            <th>Maskulinum</th>
+                            <th>Femininum</th>
+                            <th>Neutrum</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Männer</td>
+                                <td>Frauen</td>
+                                <td rowspan="7">Rest</td>
+                            </tr>
+                            <tr>
+                                <td>Männliche Teire</td>
+                                <td>Weibliche Tiere</td>
+                            </tr>
+                            <tr>
+                                <td>Manche andere lebende Dinge</td>
+                                <td>Lebende Dinge</td>
+                            </tr>
+                            <tr>
+                                <td>Fische</td>
+                                <td>drei Fische</td>
+                            </tr>
+                            <tr>
+                                <td>Bäume</td>
+                                <td>Manche Pflanzen</td>
+                            </tr>
+                            <tr>
+                                <td>Mond</td>
+                                <td>Sonne (und andere himmlische Dinge)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h2>Lak</h2>
+                    <table>
+                        <caption>Genus in Lak</caption>
+                        <thead>
+                            <th>Kriterium</th>
+                            <th>Genus</th>
+                            <th>Beispiel</th>
+                            <th>Bedeutung</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Männer</td>
+                                <td>I</td>
+                                <td>las</td>
+                                <td>Ehemann</td>
+                            </tr>
+                            <tr>
+                                <td>Frauen</td>
+                                <td>II</td>
+                                <td>ninu</td>
+                                <td>Mutter</td>
+                            </tr>
+                            <tr>
+                                <td>Andere lebende Dinge</td>
+                                <td>III</td>
+                                <td>nic</td>
+                                <td>Stier</td>
+                            </tr>
+                            <tr>
+                                <td>Rest</td>
+                                <td>IV</td>
+                                <td>nex</td>
+                                <td>Fluss</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                
+                <section>
+                <h2>Typen</h2>
+                <ul>
+                    <li>Was sind die mögliche Unterschieden für Genus?</li>
+                    <li>de la Grassiere (1898):</li>
+                    <ol>
+                        <li>lebende/nicht lebende</li>
+                        <li>rational/non–rational</li>
+                        <li>mensch/nicht–mensch</li>
+                        <li>Männer/andere</li>
+                        <li>Stark/schwach</li>
+                        <li>augmentative/diminutive</li>
+                        <li>männlich/andere</li>
+                        <li>Maskulinum/Femininum/kein-Geschlecht</li>
+                    </ol>
+                </ul>
+                </section>
+            </section>
+        </div>
+    </div>
+    <script src='js/reveal.js'></script>
+    <script>
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            // Display the page number of the current slide
+            slideNumber: true,
+            // Push each slide change to the browser history
+            history: true,
+            // Vertical centering of slides
+            center: false,
+            // Transition speed
+            transitionSpeed: 'slow', // default/fast/slow
+            viewDistance: 200,
+            menu: {
+                themes:
+                    [
+                        { name: 'Sof', theme: 'css/theme/sof.css' },
+                        { name: 'Moon', theme: 'css/theme/moon.css' },
+                        { name: 'Blood', theme: 'css/theme/blood.css' },
+                        { name: 'Beige', theme: 'css/theme/beige.css' },
+                        { name: 'Night', theme: 'css/theme/night.css' },
+                        { name: 'League', theme: 'css/theme/league.css' },
+                        { name: 'Serif', theme: 'css/theme/serif.css' },
+                        { name: 'Solarized', theme: 'css/theme/solarized.css' },
+                        { name: 'White', theme: 'css/theme/white.css' },
+                        { name: 'Sky', theme: 'css/theme/sky.css' },
+                    ]
+            },
+            // Optional reveal.js plugins
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+                { src: 'plugin/zoom-js/zoom.js', async: true },
+                { src: 'plugin/notes/notes.js', async: true },
+                { src: 'plugin/reveal.js-menu/menu.js' },
+            ]
+        });
+    </script>
+    <script src='js/mermaid.js'></script>
+    <script>
+        mermaid.initialize({
+            theme: 'forest',
+            logLevel: 3,
+            flowchart: { curve: 'basis' },
+        });
+    </script>
+</body>
+
+</html>
