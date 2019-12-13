@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='author' content='Pete'>
+    <title>Genus</title>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+    <meta name='viewport'
+        content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui'>
+    <link rel='stylesheet' href='css/reset.css'>
+    <link rel='stylesheet' href='css/reveal.css'>
+    <link rel='stylesheet' type='text/css' href='js/leaflet/leaflet.css' />
+    <script type='text/javascript' src='js/leaflet/leaflet.js'></script>
+    <script type='text/javascript' src='js/leaflet/leafletembed.js'></script>
+    <script type='text/javascript' src='js/leaflet/numbermap.js'></script>
+    <link rel='stylesheet' href='css/theme/sof.css' id='theme'>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <!--[if lt IE 9]>
+<script src='reveal.js/lib/js/html5shiv.js'></script>
+<![endif]-->
+    <link rel='stylesheet' href='css/additions.css'>
+</head>
+
+<body>
+    <div class='reveal'>
+        <div class='slides'>
+            <section class='front' id='title-slide'>
+                <div class='front_container'>
+                    <div class='front_info'>
+                        <h1 class='title'>Genus</h1>
+                        <p class='subtitle'>Theorie und Markierheit</p>
+                        <p class='author'>Peter W. Smith</p>
+                        <p class='date'>13. Dezember 2019</p>
+                    </div>
+                    <div class='front_logo'>
+                        <img class='logo' src='GU-Logo-schwarz.png'>
+                    </div>
+                </div>
+            </section>
+            
+
+            <section>
+                <section class='title-slide slide level1'>
+                    <h1>Semantische Merkmale</h1>
+                </section>
+
+                <section>
+                    <h2>Unser Typologie bis jetzt</h2>
+                    <ul>
+                        <li>Unser Merkmale für Numerus und Person haben eine klare semantische Bedeutung.</li>
+                        <li class="fragment" data-fragment-index="2">Bei Genus, die Situation ist nicht so klar.</li>
+                        <li class="fragment" data-fragment-index="3">Wir haben gesehen, dass es ,,streng semantische
+                            Systeme'' gibt.</li>
+                        <li class="fragment" data-fragment-index="3">Hier, semantische Merkmale passen.</li>
+                        <li class="fragment" data-fragment-index="4">Aber, wir haben auch gesehen ,,formale Systeme''
+                            und ,,überwiegend semantisce Systeme''.</li>
+                        <li class="fragment" data-fragment-index="4"><span class="emphasisgreen">Wollen wir semantische
+                                Merkmale hier?</span></li>
+                    </ul>
+                </section>
+
+            </section>
+
+            <section>
+                <section class='title-slide slide level1'>
+                    <h1>Semantische vs. morphologische Merkmale</h1>
+                </section>
+
+                <section>
+                    <h2>Sem vs. Morph</h2>
+                    <ul>
+                        <li>Merkmale haben eine morphologische Exponent.</li>
+                        <li>Sie haben auch eine Bedeutung.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Numerus</h2>
+                    <img src="images/wk7_manam.png" alt="">
+                </section>
+
+                <section>
+                    <h2>Numerus</h2>
+                    <img src="images/wk7_sursurunga.png" alt="">
+                </section>
+
+            
+            <section>
+            <h2>Merkmale</h2>
+            <ul>
+                <li>Also, wir sagen, dass Merkmale haben eine semantische Teil und eine morphologische Teil.</li>
+                <li>Normalerweise sind die Werte das Gleiche.</li>
+                <li>Aber, für macnhe Merkmale nicht.</li>
+            </ul>
+            </section>
+
+            
+            <section>
+            <h2>Ausnahme</h2>
+            <ul>
+                <li><span class='italic'>Mädchen</span> im Deutschen.</li>
+                <li><span class='italic'>commitee</span> Substantive im Englischen.</li>
+                <li><span class='italic'>ngwazi</span> im Chichewa.</li>
+            </ul>
+            <img src="images/wk7_ngwazi.png" alt="">
+            </section>
+
+            
+            <section>
+            <h2>Ausnahme</h2>
+            <ul>
+                <li>Und manche Merkmale haben kein Wert für entweder die semantische oder die morphologische Teil.</li>
+                <li>z.B. <span class='italic'>pluarlia tantum</span> Substantive</li>
+                <ul>
+                    <li><span class='italic'>scissors</span></li>
+                    <li><span class='italic'>hersenen (Niederländisch)</span></li>
+                </ul>
+            </ul>
+            </section>
+        </section>
+
+            <section>
+                <section class='title-slide slide level1'>
+                    <h1>Eine Semantik für Genus?</h1>
+                </section>
+
+                <section>
+                    <h2>Semantische Unterschieden in Genus</h2>
+                    <ol>
+                        <li>lebende/nicht lebende</li>
+                        <li>rational/non–rational</li>
+                        <li>mensch/nicht–mensch</li>
+                        <li>Männer/andere</li>
+                        <li>Stark/schwach</li>
+                        <li>augmentative/diminutive</li>
+                        <li>männlich/andere</li>
+                        <li>Maskulinum/Femininum/kein-Geschlecht</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h2>Semantische Unterschieden in Genus</h2>
+                    <ul>
+                        <li>Es gibt relativ wenig starke semantische Systeme.</li>
+                        <li>Für die meisten Sprache (mit Genus) sehen wir vielen Beispiele, die willkürlich sind.</li>
+                        <li>Aber, wir haben gesehen, dass normalerweise es einen semantischen Kern gibt.</li>
+                        <li>Also: sollen wir nur morphologische Merkmalen haben?</li>
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <section class='title-slide slide level1'>
+                    <h1>Ellipse</h1>
+                </section>
+
+                <section>
+                    <h2>Drei Klasse</h2>
+                    <ul>
+                        <li>Es gibt Evidenz für semantische Merkmale von Ellipse.</li>
+                        <li class="fragment">Aber, nur für manche Substantive.</li>
+                        <li>Wir sehen dies mit Ellipse, wobei Wörter, die wir in einem Satz erwarten, sind nicht
+                            ausgesprochen.</li>
+                        <!-- <li>Dieses syntactische Prozess, braucht </li> -->
+                    </ul>
+                </section>
+
+
+
+                <section>
+                    <h2>Actress-Klasse</h2>
+                    <ul>
+                        <li>Für andere Substantive gibt es ein Effekt.</li>
+                        <li>Hier sehen wir, dass ein maskulinum Substantiv erlaubt Ellipse von ein femininum Substantiv,
+                            aber nicht umgekehrt.</li>
+                    </ul>
+                    <img class="fragment" data-fragment-index="2" src="images/wk7_actress_german_a.png" alt="">
+
+                    <img class="fragment" data-fragment-index="2" src="images/wk7_actress_german_b.png" alt="">
+                </section>
+
+                <section>
+                    <h2>Actress-Klasse (B.P)</h2>
+                    <ul>
+                        <li>Das Gleiche im brazilianischen Portugiesisch:</li>
+                    </ul>
+                    <p class='whitespace'></p>
+                    <img src="images/wk7_actor_class.png" alt="">
+                </section>
+
+
+                <section>
+                    <h2>Actress-Klasse</h2>
+                    <ul>
+                        <li>Und im Russischen:</li>
+                    </ul>
+                    <p class='whitespace'></p>
+                    <img src="images/wk7_actress_russian.png" alt="">
+                    <ul>
+                        <li>Es ist klar, dass die Femininum Genus hat eine klare semantische Bedeutung.</li>
+                        <li>Aber es scheint, dass Maskulinum bedeutet ,,entweder männlich oder weiblich.''</li>
+                    </ul>
+                </section>
+
+
+
+
+                <section>
+                    <h2>Markierheit</h2>
+                    <ul>
+                        <li>Wir nennen diese Phänomen ,,Markierheit''.</li>
+                        <li>Es ist eine Begriff van die 1930er, von die berühmte Arbeit von Roman Jakobson und Nikolai
+                            Trubetzkoy.</li>
+                        <li>Es bedeutet, dass die Sprachmerkmalen sind charakterisiert durch Oppositionen.</li>
+                        <li>Aber, in einem Paar A und B (die steht in Oppsotion), entweder A oder B hat eine klare
+                            Definition.</li>
+                    </ul>
+
+
+                </section>
+
+                <section>
+                    <h2>Markierheit</h2>
+                    <img src="images/wk7_donkey_1.png" alt="">
+
+                    <img src="images/wk7_donkey_2.png" alt="">
+                </section>
+                <section>
+                    <h2>Andere Effekte</h2>
+                    <ul>
+                        <!-- <li>Es ist nicht nur für Ellipse mit diesen Substantive.</li> -->
+
+                        <li>Weitere Evidenz</li>
+                    </ul>
+                    <p class='whitespace'></p>
+                    <img src="images/wk7_actress_german_english_lions.png" alt="">
+                </section>
+
+
+                <section>
+                    <h2>Ellipse</h2>
+                    <ul>
+                        <li>Hier können wir sagen, dass Ellipse grammatisch ist, wenn die Beduetung der nicht
+                            gesprochene Element in der ausgesprochene Element enthalt wird.</li>
+                        <li><span class='emphasisgreen'>Also, in diesem Fall, müß die Genusmerkmale eine semantische
+                                Bedeutung haben.</span></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Tante-Onkel Klasse</h2>
+
+                    <ul>
+                        <li>Bedeutet immer Maskulinum entweder männlich oder weibliche Dinge?</li>
+                        <li class="fragment">Für andere Substantive sehen wir dass, die Maskulinumform bedeutet nur
+                            männlich Einheiten.</li>
+                        <li class="fragment">Die Femininumform bedeutet nur weibliche Einheiten.</li>
+                    </ul>
+
+                </section>
+
+
+                <section>
+                    <h2>Tante-Onkel Klasse</h2>
+                    <img src="images/wk7_ta_german.png" alt="">
+
+                    <img src="images/wk7_ta_english.png" alt="">
+                </section>
+
+                <section>
+                    <h2>Tante-Onkel Klasse: Russischen</h2>
+                    <ul>
+                        <li>Das Gleiche im Russischen:</li>
+                    </ul>
+                    <p class='whitespace'></p>
+                    <img src="images/wk7_ta_russian.png" alt="">
+                </section>
+
+
+                <section>
+                    <h2>Tante-Onkel Klasse: BP</h2>
+                    <ul>
+                        <li>Und im brazilianischen Portugiesisch.</li>
+                    </ul>
+                    <p class='whitespace'></p>
+                    <img src="images/wk7_ta_bp.png" alt="">
+                </section>
+
+
+                <section>
+                    <h2>Tante~Onkel Klasse</h2>
+                    <img src="images/wk7_aunt_class.png" alt="">
+
+                    <img src="images/wk7_ta_english_inclusion.png" alt="">
+                </section>
+
+                <section>
+                    <h2>Bobaljik & Zocca: Erklärung</h2>
+                    <ul>
+                        <li>Um diese Benehmens zu erklären, <a class='citation'
+                                href='https://link.springer.com/article/10.1007%2Fs11525-010-9156-3'>Bobaljik & Zocca
+                                (2008)</a> geben eine semantische Erklärung.</li>
+                    </ul>
+                    <p class='whitespace'></p>
+                    <img src="images/wk7_bz_explanation.png" alt="">
+                    <ul>
+                        <li>Hier müß ,,Maskulinum'' eine klare Bedeutung haben.</li>
+                    </ul>
+                </section>
+                <!-- </section> -->
+                <!-- <section>
+                <section>
+                    <h1 class="level1">Ellipse</h1>
+                </section> -->
+                <section>
+                    <h2>Medico-Klasse</h2>
+                    <ul>
+                        <li>Zum Schluss hat Genus kein Effekt für manche Substantive.</li>
+                        <li>In brazilianischen Portugiesisch:</li>
+                    </ul>
+                    <p class='whitespace'></p>
+                    <img src="images/wk7_medico_intro.png" alt="">
+                </section>
+
+                <section>
+                    <h2>Medico-Klasse</h2>
+                    <ul>
+                        <li>Für diese Substantive sagen Bobaljik & Zocca, dass Genus ist Flexionsmorphologie statt
+                            Derivationsmorphologie.</li>
+                    </ul>
+                </section>
+            </section>
+
+        </div>
+    </div>
+    <script src='js/reveal.js'></script>
+    <script>
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            // Display the page number of the current slide
+            slideNumber: true,
+            // Push each slide change to the browser history
+            history: true,
+            // Vertical centering of slides
+            center: false,
+            // Transition speed
+            transitionSpeed: 'slow', // default/fast/slow
+            viewDistance: 200,
+            menu: {
+                themes:
+                    [
+                        { name: 'Sof', theme: 'css/theme/sof.css' },
+                        { name: 'Moon', theme: 'css/theme/moon.css' },
+                        { name: 'Blood', theme: 'css/theme/blood.css' },
+                        { name: 'Beige', theme: 'css/theme/beige.css' },
+                        { name: 'Night', theme: 'css/theme/night.css' },
+                        { name: 'League', theme: 'css/theme/league.css' },
+                        { name: 'Serif', theme: 'css/theme/serif.css' },
+                        { name: 'Solarized', theme: 'css/theme/solarized.css' },
+                        { name: 'White', theme: 'css/theme/white.css' },
+                        { name: 'Sky', theme: 'css/theme/sky.css' },
+                    ]
+            },
+            // Optional reveal.js plugins
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+                { src: 'plugin/zoom-js/zoom.js', async: true },
+                { src: 'plugin/notes/notes.js', async: true },
+                { src: 'plugin/reveal.js-menu/menu.js' },
+            ]
+        });
+    </script>
+    <script src='js/mermaid.js'></script>
+    <script>
+        mermaid.initialize({
+            theme: 'forest',
+            logLevel: 3,
+            flowchart: { curve: 'basis' },
+        });
+    </script>
+</body>
+
+</html>
