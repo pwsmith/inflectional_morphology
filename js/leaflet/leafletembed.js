@@ -21,12 +21,6 @@ function initmap() {
 	map.setView(new L.LatLng(0, 20),2);
 	map.addLayer(osm);
 
-	var aari = L.circle([6.00, 36.58], {
-		color: 'red',
-		fillColor: '#f03',
-		fillOpacity: 0.5,
-		radius: 100000
-	}).addTo(map);
 
 	var english = L.circle([52.00, 0.00], {
 		color: 'red',
@@ -44,13 +38,6 @@ function initmap() {
 	// .setContent("I am a standalone popup.")
 	// .openOn(map);
 
-	aari.bindPopup("Aari.");
-	aari.on('mouseover', function (e) {
-		this.openPopup();
-	});
-	aari.on('mouseout', function (e) {
-		this.closePopup();
-	});
 
 	var afrikaans = L.circle([-31, 22], {
 		color: 'red',

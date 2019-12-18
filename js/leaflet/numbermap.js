@@ -26,7 +26,7 @@ function init_num_map() {
 		fillColor: 'blue',
 		radius: 100000
 	}).addTo(map2);
-	xhoo.bindPopup('!Xhoo'.capitalize());
+	xhoo.bindPopup('\!Xóõ'.capitalize());
 	xhoo.on('mouseover', function (e) {
 		this.openPopup();
 	});
