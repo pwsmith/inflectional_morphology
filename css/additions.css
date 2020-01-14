@@ -5,7 +5,7 @@ body {
     /* color: white; */
   }
   
-  .ex::before {
+  /* .ex::before {
     counter-increment: example-counter;
     content:"(" counter(example-counter) ") ";
   }
@@ -19,7 +19,7 @@ body {
     counter-increment: example-counter;
     content:"(" counter(example-counter) ") *";
     padding-left: 2em;
-  }
+  } */
   .reveal .logo {
     /* margin: 15px 0px; */
     background: rgba(255, 255, 255, 0);

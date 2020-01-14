@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='author' content='Pete'>
+    <title>Kasus Theorie</title>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+    <meta name='viewport'
+        content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui'>
+    <link rel='stylesheet' href='css/reset.css'>
+    <link rel='stylesheet' href='css/reveal.css'>
+    <link rel='stylesheet' type='text/css' href='js/leaflet/leaflet.css' />
+    <script type='text/javascript' src='js/leaflet/leaflet.js'></script>
+    <script type='text/javascript' src='js/leaflet/leafletembed.js'></script>
+    <script type='text/javascript' src='js/leaflet/numbermap.js'></script>
+    <link rel='stylesheet' href='css/theme/sof.css' id='theme'>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <!--[if lt IE 9]>
+<script src='reveal.js/lib/js/html5shiv.js'></script>
+<![endif]-->
+    <link rel='stylesheet' href='css/additions.css'>
+    <link rel="stylesheet" href="css/linguistic-examples.css">
+</head>
+
+<body>
+    <div class='reveal'>
+        <div class='slides'>
+            <section class='front' id='title-slide'>
+                <div class='front_container'>
+                    <div class='front_info'>
+                        <h1 class='title'>Kasus Theorie</h1>
+                        <p class='subtitle'></p>
+                        <p class='author'>Peter W. Smith</p>
+                        <p class='date'>17. Januar 2019</p>
+                    </div>
+                    <div class='front_logo'>
+                        <img class='logo' src='GU-Logo-schwarz.png'>
+                    </div>
+                </div>
+            </section>
+            <section>
+            <section class='title-slide slide level1'>
+            <h1>Einleitung</h1>
+            </section>
+            
+            <section>
+            <h2>Kasus</h2>
+                <!-- <ul>
+                    <li>Hello</li>
+                    <li>Hello</li>
+                </ul> -->
+                <!-- <p class='ex'>Hello</p> -->
+                <div class="gloss-example-container">
+                    <div class='gloss-individual-example'>
+                    <div class='example-number'><p class='ex'></p></div>
+                    <div class="ab-counter"><p class='ab'></p></div>
+                    <div class='judgement'><p>#</p></div>
+                    <div class='gloss-example'>
+                        <ol class='sentence'>
+                            <li class="gloss-individual-word">
+                                <ol class='word'>
+                                    <li class="target-word">Ik</li>
+                                    <li class="target-gloss">I.<span class='smallcaps'>nom</span></li>
+                                </ol>
+                            </li>
+                            <li class="gloss-individual-word">
+                                <ol class='word'>
+                                    <li class="target-word">zag</li>
+                                    <li class="target-gloss">see.<span class='smallcaps'>past</span></li>
+                                </ol>
+                            </li>
+                            <li class="gloss-individual-word">
+                                <ol class='word'>
+                                    <li class="target-word">twee</li>
+                                    <li class="target-gloss">two</li>
+                                </ol>
+                            </li>
+                            <li class="gloss-individual-word">
+                                <ol class='word'>
+                                    <li class="target-word">ber-en,</li>
+                                    <li class="target-gloss">bear-<span class='smallcaps'>pl</span></li>
+                                </ol>
+                            </li>
+                            <li class="gloss-individual-word">
+                                <ol class='word'>
+                                    <li class="target-word">brood-je-s</li>
+                                    <li class="target-gloss">bread-<span class='smallcaps'>dim-pl</span></li>
+                                </ol>
+                            </li>
+                            <li class="gloss-individual-word">
+                                <ol class='word'>
+                                    <li class="target-word">smer-en</li>
+                                    <li class="target-gloss">spread-<span class='smallcaps'>inf</span></li>
+                                </ol>
+                            </li>
+                        </ol>
+                    <p class='translation'>'I saw two bears, spreading on sandwiches.'</p>
+                    </div>
+                    </div>
+                    <div class='gloss-individual-example'>
+                        <div class='example-number'><p></p></div>
+                        <div class="ab-counter"><p class='ab'></p></div>
+                        <div class='judgement'><p></p></div>
+                        <div class='gloss-example'>
+                            <ol class='sentence'>
+                                <li class="gloss-individual-word">
+                                    <ol class='word'>
+                                        <li class="target-word">Oh</li>
+                                        <li class="target-gloss">Oh</li>
+                                    </ol>
+                                </li>
+                                <li class="gloss-individual-word">
+                                    <ol class='word'>
+                                        <li class="target-word">dat</li>
+                                        <li class="target-gloss">that</li>
+                                    </ol>
+                                </li>
+                                <li class="gloss-individual-word">
+                                    <ol class='word'>
+                                        <li class="target-word">was</li>
+                                        <li class="target-gloss">be.<span class='smallcaps'>3.sg.past</span></li>
+                                    </ol>
+                                </li>
+                                <li class="gloss-individual-word">
+                                    <ol class='word'>
+                                        <li class="target-word">een</li>
+                                        <li class="target-gloss">a</li>
+                                    </ol>
+                                </li>
+                                <li class="gloss-individual-word">
+                                    <ol class='word'>
+                                        <li class="target-word">wonder!</li>
+                                        <li class="target-gloss">miracle</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        <p class='translation'>'Oh that was a miracle!'</p>
+                        </div>
+                        </div>
+                </div>
+            </section>
+            </section>
+            <section>
+                <div class='gloss-example-container'>
+                <div class='gloss-individual-example'>
+                <div class='example-number'><p class='ex'></p></div>
+                <div class='ab-counter'><p class='ab'></p></div>
+                <div class='judgement'><p>*</p></div>
+                <div class='gloss-example'>
+                <ol class='sentence'>
+                <li class='gloss-individual-word'>
+                    <ol class='word'>
+                        <li class='target-word'>Nee</li>
+                        <li class='target-gloss'>no</li>
+                    </ol>
+                </li>
+                </ol>
+                <p class='translation'>Nope.</p>
+                </div>
+                </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src='js/reveal.js'></script>
+    <script>
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            // Display the page number of the current slide
+            slideNumber: true,
+            // Push each slide change to the browser history
+            history: true,
+            // Vertical centering of slides
+            center: false,
+            // Transition speed
+            transitionSpeed: 'slow', // default/fast/slow
+            viewDistance: 200,
+            menu: {
+                themes:
+                    [
+                        { name: 'Sof', theme: 'css/theme/sof.css' },
+                        { name: 'Moon', theme: 'css/theme/moon.css' },
+                        { name: 'Blood', theme: 'css/theme/blood.css' },
+                        { name: 'Beige', theme: 'css/theme/beige.css' },
+                        { name: 'Night', theme: 'css/theme/night.css' },
+                        { name: 'League', theme: 'css/theme/league.css' },
+                        { name: 'Serif', theme: 'css/theme/serif.css' },
+                        { name: 'Solarized', theme: 'css/theme/solarized.css' },
+                        { name: 'White', theme: 'css/theme/white.css' },
+                        { name: 'Sky', theme: 'css/theme/sky.css' },
+                    ]
+            },
+    //         width: "95%",
+	// height: "100%",
+	// margin: 0,
+	// minScale: 1,
+	// maxScale: 1,
+            // Optional reveal.js plugins
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+                { src: 'plugin/zoom-js/zoom.js', async: true },
+                { src: 'plugin/notes/notes.js', async: true },
+                { src: 'plugin/reveal.js-menu/menu.js' },
+            ]
+        });
+    </script>
+    <script src='js/mermaid.js'></script>
+    <script>
+        mermaid.initialize({
+            theme: 'forest',
+            logLevel: 3,
+            flowchart: { curve: 'basis' },
+        });
+    </script>
+</body>
+
+</html>

@@ -33,7 +33,7 @@ body {
 }
 
 .reveal {
-  font-family: "Linux Biolinum O", sans-serif;
+  /* font-family: "Linux Biolinum O", sans-serif; */
   /* font-family: 'Open Sans', sans-serif; */
   font-size: 40px;
   font-weight: normal;
