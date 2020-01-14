@@ -544,11 +544,6 @@ body {
 .reveal.center .slides section {
   min-height: 0 !important; }
 
-  .reveal.level1,
-  .reveal.level1 .slides,
-  .reveal.level1 .slides section {
-    min-height: 0 !important; }
-
 /* Don't allow interaction with invisible slides */
 .reveal .slides > section.future,
 .reveal .slides > section > section.future,

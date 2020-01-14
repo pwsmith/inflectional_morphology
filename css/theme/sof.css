@@ -12,6 +12,9 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   color: #fff; }
 /* @import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,500i,700i&display=swap'); */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Heebo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap');
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -32,7 +35,7 @@ body {
   padding-left: 2em;
 }
 
-.reveal {
+.reveal { 
   /* font-family: "Linux Biolinum O", sans-serif; */
   /* font-family: 'Open Sans', sans-serif; */
   font-size: 40px;
@@ -43,8 +46,11 @@ body {
 .reveal .front {
   /* background-color: #09d0b7; */
   background-color: #f2cc72;
+  font-family: 'Open Sans', serif;
   /* #eeb70d; */
-    font-family: 'Signika', sans-serif;
+    /* font-family: 'Signika', sans-serif; */
+    /* font-family: 'Heebo', sans-serif; */
+
 }
 
 span.italic {
@@ -70,6 +76,7 @@ span.boldface {
   display: flex;
   line-height: 4em;
     min-height: 0 !important;
+    font-family: 'Roboto Slab', serif;
 }
 
 .reveal .level1 h1 {
@@ -77,6 +84,7 @@ span.boldface {
   text-align: right;
   /* font-family: 'Heebo', sans-serif; */
   font-size: 2.5em;
+ 
 
 }
 
@@ -88,6 +96,7 @@ span.boldface {
   width: 75%;
   flex: none;
 align-self: flex-end;
+/* font-family: 'Heebo', sans-serif; */
 }
 
 .reveal .front h1 {
@@ -95,7 +104,9 @@ align-self: flex-end;
   font-size:2.5em;
   font-weight: 700;
   padding-top: 1em;
-    font-family: 'Signika', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Roboto Slab', serif; */
+    /* font-family: 'Signika', sans-serif; */
 }
 
 .reveal .front .front_info h2 {
@@ -146,7 +157,8 @@ flex: none;
 }
 
   .reveal .center h2, .reveal .center h1{
-    font-family: 'Signika', sans-serif;
+    /* font-family: 'Signika', sans-serif; */
+    /* font-family: 'Concert One', cursive; */
   }
 ::selection {
   color: #fff;
@@ -166,6 +178,8 @@ flex: none;
 /*********************************************
  * HEADERS
  *********************************************/
+
+
 .reveal h1,
 .reveal h2,
 .reveal h3,
@@ -173,9 +187,11 @@ flex: none;
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #000;
+  color: #000000;
   /* font-family: "Linux Biolinum O", Impact, sans-serif; */
-  font-family: "Signika", sans-serif;
+  /* font-family: "Signika", sans-serif; */
+  font-family: 'Open Sans', sans-serif;
+  /* font-family: '', serif; */
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;
@@ -184,10 +200,17 @@ flex: none;
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 3.77em; }
+  font-size: 3.77em; 
+
+  /* font-family: 'Roboto Slab', serif; */
+
+}
 
 .reveal h2 {
-  font-size: 1.75em; }
+  font-size: 1.75em; 
+  font-family: 'Open Sans', sans-serif;
+
+}
 
 .reveal h3 {
   font-size: 1.55em; }
