@@ -160,6 +160,7 @@ body {
 }
 
 .reveal .slides section .fragment.highlight-red,
+.reveal .slides section .fragment.highlight-other,
 .reveal .slides section .fragment.highlight-current-red,
 .reveal .slides section .fragment.highlight-green,
 .reveal .slides section .fragment.highlight-current-green,
@@ -169,13 +170,16 @@ body {
 	visibility: inherit;
 }
 	.reveal .slides section .fragment.highlight-red.visible {
-		color: #ff2c2d
+		color: #9e039f; 
+	}
+	.reveal .slides section .fragment.highlight-other.visible {
+		color: #58d1d4; 
 	}
 	.reveal .slides section .fragment.highlight-green.visible {
-		color: #17ff2e;
+		color: #039f64;
 	}
 	.reveal .slides section .fragment.highlight-blue.visible {
-		color: #1b91ff;
+		color: #cc7810;
 	}
 
 .reveal .slides section .fragment.highlight-current-red.current-fragment {
