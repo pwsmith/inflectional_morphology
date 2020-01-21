@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='author' content='Pete'>
+    <title>Suppletion: Adjektive</title>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+    <meta name='viewport'
+        content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui'>
+    <link rel='stylesheet' href='css/reset.css'>
+    <link rel='stylesheet' href='css/reveal.css'>
+    <link rel='stylesheet' type='text/css' href='js/leaflet/leaflet.css' />
+    <script type='text/javascript' src='js/leaflet/leaflet.js'></script>
+    <script type='text/javascript' src='js/leaflet/leafletembed.js'></script>
+    <script type='text/javascript' src='js/leaflet/numbermap.js'></script>
+    <link rel='stylesheet' href='css/theme/sof.css' id='theme'>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <!--[if lt IE 9]>
+<script src='reveal.js/lib/js/html5shiv.js'></script>
+<![endif]-->
+    <link rel='stylesheet' href='css/additions.css'>
+    <link rel='stylesheet' href='css/linguistic-examples.css'>
+</head>
+
+<body>
+    <div class='reveal'>
+        <div class='slides'>
+            <section class='front' id='title-slide'>
+                <div class='front_container'>
+                    <div class='front_info'>
+                        <h1 class='title'>Suppletion:</h1>
+                        <p class='subtitle'>Adjektive</p>
+                        <p class='author'>Peter W. Smith</p>
+                        <p class='date'>24. Januar 2020</p>
+                    </div>
+                    <div class='front_logo'>
+                        <img class='logo' src='GU-Logo-schwarz.png'>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <section class='title-slide slide level1'>
+                    <h1>Einleitung</h1>
+                </section>
+
+                <section>
+                    <h2>Komplexe Merkmale</h2>
+                    <ul>
+                        <li>Hello</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Suppletion</h2>
+                    <ul>
+                        <li>Was bedeutet ''Suppletion''?</li>
+                        <li>Wir verstehen ''Suppletion'' als enger Allomorphie.</li>
+                        <li>Das bedeutet, dass Suppletion ist eine Subklasse von Allomorphie ist.</li>
+                        <li class="fragment">Allomorphie: wenn ein Morphem zwei (oder mehr) Realisierungen hat.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Allomorphie</h2>
+                    <ul>
+                        <li><span class='sc'>plural</span> im Deutschen hat viele Realisierungen.</li>
+                        <li>Die Bedeutung ist aber dieselbe.</li>
+                    </ul>
+                    <p class='whitespace'></p>
+                    <div class='center-image'>
+                        <div>
+                            <object style='width: 90%;' data='images/allomorphy.svg'></object>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section>
+                <section class='title-slide slide level1'>
+                    <h1>Adjketive Suppletion</h1>
+                </section>
+
+                <section>
+                    <h2>Degree Morphology</h2>
+                    <ul>
+                        <li>Adjektive haben oft ein Basisform (positiv), Komparaitvform und ein Superlativform.</li>
+                        <li>Das passiert nicht immer, aber im vielen Sprachen.</li>
+                    </ul>
+                    <p class='whitespace'></p>
+                    <table>
+                        <thead>
+                            <th>Positiv</th>
+                            <th>Komparaitiv</th>
+                            <th>Superlativ</th>
+                            <th>Sprache</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>grün</td>
+                                <td>grüner</td>
+                                <td>am grünsten</td>
+                                <td>Deutsch</td>
+                            </tr>
+                            <tr>
+                                <td>happy</td>
+                                <td>happier</td>
+                                <td>happiest</td>
+                                <td>Englisch</td>
+                            </tr>
+                            <tr>
+                                <td>dobər</td>
+                                <td>po-dobər</td>
+                                <td>naj-dobər</td>
+                                <td>Bulgarian</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h2>Suppletion</h2>
+                    <ul>
+                        <li>Manchmal sehen wir eine Änderung im Komparativ und Superlativ</li>
+                        <li>Die Folgenden kommen von Indo-European</li>
+                    </ul>
+                    <table>
+                        <thead>
+                            <th>Positiv</th>
+                            <th>Komparativ</th>
+                            <th>Superlativ</th>
+                            <th>Sprache</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>good</td>
+                                <td>better</td>
+                                <td>best</td>
+                                <td>Englisch</td>
+                            </tr>
+                            <tr>
+                                <td>bra</td>
+                                <td>bättre</td>
+                                <td>bäst</td>
+                                <td>Schwedisch</td>
+                            </tr>
+                            <tr>
+                                <td>dobrý</td>
+                                <td>lepši</td>
+                                <td>nejlepši</td>
+                                <td>Tschechisch</td>
+                            </tr>
+                            <tr>
+                                <td>mat</td>
+                                <td>gwell(och)</td>
+                                <td>gwellān</td>
+                                <td>Breton</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h2>Andere Sprache</h2>
+                    <ul>
+                        <li>Nicht nur IE</li>
+                    </ul>
+                    <table>
+                        <thead>
+                            <th>Positiv</th>
+                            <th>Komparativ</th>
+                            <th>Superlativ</th>
+                            <th>Sprache</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>hyvä</td>
+                                <td>parempi</td>
+                                <td>parhain</td>
+                                <td>Finnisch</td>
+                            </tr>
+                            <tr>
+                                <td>osda</td>
+                                <td>dajehla</td>
+                                <td>widajelʌ̃ʔi</td>
+                                <td><a href="https://glottolog.org/resource/languoid/id/cher1273">Cherokee</a></td>
+                            </tr>
+                            <tr>
+                                <td>ezär</td>
+                                <td>xoča</td>
+                                <td>mačēne</td>
+                                <td><a href="https://glottolog.org/resource/languoid/id/svan1243">Svan</a></td>
+                            </tr>
+                            <tr>
+                                <td>kargii</td>
+                                <td>uk'etesi</td>
+                                <td>sauk'eteso</td>
+                                <td><a href="https://glottolog.org/resource/languoid/id/nucl1302">Georgian</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                
+                <section>
+                <h2>Mögliche Muster</h2>
+                <table>
+                    <thead>
+                        <th>Positiv</th>
+                        <th>Komparativ</th>
+                        <th>Superlativ</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>B</td>
+                            <td>B</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>B</td>
+                            <td>C</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>B</td>
+                            <td>A</td>
+                            <td>✕</td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>B</td>
+                            <td>✕</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </section>
+                
+                <section>
+                <h2>Mögliche Muster: GRÜN</h2>
+                <table>
+                    <thead>
+                        <th>Positiv</th>
+                        <th>Komparativ</th>
+                        <th>Superlativ</th>
+                        <th>Muster</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>grün</td>
+                            <td>grüner</td>
+                            <td>am grünsten</td>
+                            <td>AAA</td>
+                        </tr>
+                        <tr>
+                            <td>gut</td>
+                            <td>besser</td>
+                            <td>am besten</td>
+                            <td>ABB</td>
+                        </tr>
+                        <tr>
+                            <td>asko</td>
+                            <td>gehiago</td>
+                            <td>gehien</td>
+                            <td>ABB</td>
+                        </tr>
+                        <tr>
+                            <td>bonus</td>
+                            <td>melior</td>
+                            <td>optimus</td>
+                            <td>ABC</td>
+                        </tr>
+                        <tr>
+                            <td>da</td>
+                            <td>gwell</td>
+                            <td>gorau</td>
+                            <td>ABC</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </section>
+                
+                <section>
+                <h2>Unmöglich</h2>
+                <table>
+                    <thead>
+                        <th>Positiv</th>
+                        <th>Komparativ</th>
+                        <th>Superlativ</th>
+                        <th>Muster</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>gut</td>
+                            <td>guter</td>
+                            <td>am besten</td>
+                            <td>AAB</td>
+                        </tr>
+                        <tr>
+                            <td>gut</td>
+                            <td>besser</td>
+                            <td>am gutsten</td>
+                            <td>ABA</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </section>
+            </section>
+        </div>
+    </div>
+    <script src='js/reveal.js'></script>
+    <script>
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            // Display the page number of the current slide
+            slideNumber: true,
+            // Push each slide change to the browser history
+            history: true,
+            // Vertical centering of slides
+            center: false,
+            // Transition speed
+            transitionSpeed: 'slow', // default/fast/slow
+            viewDistance: 200,
+            menu: {
+                themes:
+                    [
+                        { name: 'Sof', theme: 'css/theme/sof.css' },
+                        { name: 'Moon', theme: 'css/theme/moon.css' },
+                        { name: 'Blood', theme: 'css/theme/blood.css' },
+                        { name: 'Beige', theme: 'css/theme/beige.css' },
+                        { name: 'Night', theme: 'css/theme/night.css' },
+                        { name: 'League', theme: 'css/theme/league.css' },
+                        { name: 'Serif', theme: 'css/theme/serif.css' },
+                        { name: 'Solarized', theme: 'css/theme/solarized.css' },
+                        { name: 'White', theme: 'css/theme/white.css' },
+                        { name: 'Sky', theme: 'css/theme/sky.css' },
+                    ]
+            },
+            // Optional reveal.js plugins
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+                { src: 'plugin/zoom-js/zoom.js', async: true },
+                { src: 'plugin/notes/notes.js', async: true },
+                { src: 'plugin/reveal.js-menu/menu.js' },
+            ]
+        });
+    </script>
+    <script src='js/mermaid.js'></script>
+    <script>
+        mermaid.initialize({
+            theme: 'forest',
+            logLevel: 3,
+            flowchart: { curve: 'basis' },
+        });
+    </script>
+</body>
+
+</html>
