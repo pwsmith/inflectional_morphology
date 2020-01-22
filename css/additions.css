@@ -152,15 +152,17 @@ body {
   .st {
     text-decoration: line-through;
   }
-  
-    .reveal .center h2, .reveal .center h1{
-      /* font-family: 'Signika', sans-serif; */
-    }
-  
 
-
-.container{
+  .container{
     display: flex;
+    justify-content: space-between;
+    /* align-items: baseline; */
+  }
+
+.containerbaseline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
   .col {
@@ -171,6 +173,10 @@ body {
     flex: 2;
   }
   
+  .colgrow2 {
+    flex: 3;
+  }
+
   div.mermaid {
     /* font-family: 'trebuchet ms', verdana, arial; */
     /* font-family: 'Courier New', Courier, monospace !important; */
