@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='author' content='Pete'>
+    <title>Suppletion: Kasus und Numerus</title>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+    <meta name='viewport'
+        content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui'>
+    <link rel='stylesheet' href='css/reset.css'>
+    <link rel='stylesheet' href='css/reveal.css'>
+    <link rel='stylesheet' type='text/css' href='js/leaflet/leaflet.css' />
+    <script type='text/javascript' src='js/leaflet/leaflet.js'></script>
+    <script type='text/javascript' src='js/leaflet/leafletembed.js'></script>
+    <script type='text/javascript' src='js/leaflet/numbermap.js'></script>
+    <link rel='stylesheet' href='css/theme/sof.css' id='theme'>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <!--[if lt IE 9]>
+<script src='reveal.js/lib/js/html5shiv.js'></script>
+<![endif]-->
+    <link rel='stylesheet' href='css/additions.css'>
+    <link rel='stylesheet' href='css/linguistic-examples.css'>
+</head>
+
+<body>
+    <div class='reveal'>
+        <div class='slides'>
+            <section class='front' id='title-slide'>
+                <div class='front_container'>
+                    <div class='front_info'>
+                        <h1 class='title'>Suppletion</h1>
+                        <p class='subtitle'>Kasus und Numerus</p>
+                        <p class='author'>Peter W. Smith</p>
+                        <p class='date'>31.01.2020</p>
+                    </div>
+                    <div class='front_logo'>
+                        <img class='logo' src='GU-Logo-schwarz.png'>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <section class='title-slide slide level1'>
+                    <h1>Einleitung</h1>
+                </section>
+                <section>
+                    <h2>Allomorphie und VI</h2>
+                    <ul>
+                        <li>Manchmal ist die Form abhängig von Kontext.</li>
+                        <li>Wir schreiben das <span class="emphasisgreen">Kontext</span> nach '|'.</li>
+                    </ul>
+                    <!-- <p class='whitespace'></p> -->
+                    <ul style="list-style-type: none;">
+                        <li>√<span class='sc'>pl</span> ⇔ /ən/ <span style="font-size: 1.5em;">|</span> <span
+                                class="emphasisgreen">{√<span class='sc'>student</span>, √<span
+                                    class='sc'>thema</span>}</span> </li>
+                        <li>√<span class='sc'>pl</span> ⇔ /ə/ <span class='emphasismagenta fragment'
+                                data-fragment-index="3">(woanders)</span></li>
+                        <li>√<span class='sc'>pl</span> ⇔ /s/ <span style="font-size: 1.5em;">|</span> <span
+                                class="emphasisgreen">{√<span class='sc'>auto</span>, √<span
+                                    class='sc'>hobby</span>}</span></li>
+                        <li>√<span class='sc'>pl</span> ⇔ /∅/ <span style="font-size: 1.5em;">|</span> <span
+                                class="emphasisgreen">{√<span class='sc'>löffel</span>}</span></li>
+                    </ul>
+                    <ul class="fragment" data-fragment-index="2">
+                        <li>Wenn es kein bestimmte Kontext gibt, dann die Regel ist <span class="emphasismagenta">die
+                                "woanders" Regel</span>, die in alle nicht-bestimmte Kontexte anwendet.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Elsewhere</h2>
+                    <ul>
+                        <li>Die <span class='italic'>woanders</span> Regel kann in Prinzip für jede Substantiv
+                            anwenden.</li>
+                        <li>Regeln, die ein Kontext spezifiziern, vor die <span class='italic'>woanders</span> Regel
+                            Vorrang haben.</li>
+                        <li class="fragment">Man müß die meist spezifisch Regel benutzen!</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Einleitung</h2>
+                    <ul>
+                        <li>Suppletion: enger Änderung zu ein Morphem in einem bestimmten Kontext.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Suppletion</h2>
+                    <table>
+                        <thead>
+                            <th>Positive</th>
+                            <th>Comparative</th>
+                            <th>Superlative</th>
+                            <th>Pattern</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>smart</td>
+                                <td>smarter</td>
+                                <td>smartest</td>
+                                <td>AAA</td>
+                            </tr>
+                            <tr>
+                                <td>good</td>
+                                <td>better</td>
+                                <td>best</td>
+                                <td>ABB</td>
+                            </tr>
+                            <tr>
+                                <td>bonus</td>
+                                <td>melior</td>
+                                <td>optimus</td>
+                                <td>ABC</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h2>Nicht attestiert</h2>
+                    <table>
+                        <thead>
+                            <th>Positive</th>
+                            <th>Comparative</th>
+                            <th>Superlative</th>
+                            <th>Pattern</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>good</td>
+                                <td>better</td>
+                                <td>goodest</td>
+                                <td>ABA</td>
+                            </tr>
+                            <tr>
+                                <td>good</td>
+                                <td>gooder</td>
+                                <td>best</td>
+                                <td>AAB</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h2>Containment</h2>
+                    <table>
+                        <thead>
+                            <th>Adjective</th>
+                            <th>Comparative</th>
+                            <th>Superlative</th>
+                            <th>Language</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>mlad-ý</td>
+                                <td>mlad-<span class='boldface'>ši</span></td>
+                                <td>nej-mlad-<span class='boldface'>ši</span></td>
+                                <td>Czech</td>
+                            </tr>
+                            <tr>
+                                <td>nagy</td>
+                                <td>nagy-<span class='boldface'>obb</span></td>
+                                <td style="font-size: 0.8em;">leg-nagy-<span class='boldface'>obb</span></td>
+                                <td>Hungarian</td>
+                            </tr>
+                            <tr>
+                                <td>nüs°ə</td>
+                                <td><span class='boldface'>c̨ 'a</span>-nüs°-ə</td>
+                                <td style='font-size: 0.8em;'>a-<span class='boldface'>c̨ 'a</span>-nüs°-ə</td>
+                                <td>Ubykh</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h2>Vorschlag: Bobaljik</h2>
+                    <ul>
+                        <li>Bobaljik stellt die folgende Hypothese vor:</li>
+                    </ul>
+                    <div class='example-container'>
+                        <div class='individual-example'>
+                            <div class='example-number'>
+                                <p class='ex'></p>
+                            </div>
+                            <div class='example-sentence'>
+                                <p><span class='underline'>Containment Hypothesis</span><br>Die Superlativ enthält
+                                    immer die Komparativstruktur.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Adjektive</h2>
+                    <!-- <div class='center-image'> -->
+                    <div class='containerbaseline'>
+                        <div class='col fragment'>
+                            <object style='width: 50%;' data='images/wk10_pos.png'></object>
+                            <p style="font-size: 0.75em;">Positiv</p>
+                        </div>
+                        <div class="colgrow fragment">
+                            <object style='width: 80%;' data='images/wk10_pos_komp.png'></object>
+                            <p style="font-size: 0.75em;">Komparativ</p>
+                        </div>
+                        <div class="colgrow2 fragment">
+                            <object style='width: 75%;' data='images/wk10_supr.png'></object>
+                            <p style="font-size: 0.75em;">Superlativ</p>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </section>
+                <section>
+                    <h2>Beweis #2</h2>
+                    <ul>
+                        <li>Bobailjik zeigt die Folgende an:</li>
+                    </ul>
+                    <div class='example-container'>
+                        <div class='individual-example'>
+                            <div class='example-number'>
+                                <p class='ex'></p>
+                            </div>
+                            <div class='example-sentence'>
+                                <p><span class="underline">Synthetisch–Superlativ Generalisierung</span><br>Keine
+                                    Sprache hat ein morphologische Superlativ ohne ein morphologische Komparativ.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <table>
+                        <thead>
+                            <th>Positiv</th>
+                            <th>Komparativ</th>
+                            <th>Superlativ</th>
+                            <th>Sprache</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    üvä
+                                </td>
+                                <td>parəpi</td>
+                                <td>kəikkia parəpi</td>
+                                <td>Votic</td>
+                            </tr>
+                            <tr>
+                                <td>polxoj</td>
+                                <td>xuže</td>
+                                <td>samyj ploxoj</td>
+                                <td>Russisch</td>
+                            </tr>
+                            <tr>
+                                <td>good</td>
+                                <td>more good</td>
+                                <td>*goodest</td>
+                                <td><span class='italic'>hypothetisch</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h2>Beweis #2</h2>
+                    <ul>
+                        <li>Errinerung von letzte Woche: suffixe wird von Verschiebung gebildet.</li>
+                    </ul>
+
+                </section>
+
+                <section>
+                    <h2>Beweis #2</h2>
+                    <div class='container'>
+                        <div class='col'>
+                            <div class='center-image'>
+                                <div>
+                                    <object style='width: 90%;' data='images/wk10_headmvt.png'></object>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col'>
+                            <ul>
+                                <li class="fragment">Verschiebung zur #1: morphologisch Komparativ, synthetisch
+                                    Superlativ</li>
+                                <li class="fragment">Verschiebung zur #2: morphologisch Komparativ, Superlativ</li>
+                                <li class="fragment">Verschiebung zur #2 setze Verschiebung zur #1 aus.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>*ABA</h2>
+                    <ul style="list-style-type: none;">
+                        <li>√<span class='sc'>gut</span> ⇔ /bɛs/ <span style="font-size: 1.5em;">|</span> <span
+                                class='sc'>___ komp</span></li>
+                        <li>√<span class='sc'>gut</span> ⇔ /gʊt/ <span class='italic'>woanders</span></li>
+                        <li>√<span class='sc'>grün</span> ⇔ /gru:n/</li>
+                    </ul>
+                    <ul class="fragment">
+                        <li>Weil der Superlativ immer den Komparativ enthält, muss die mehr spezifishce Regel sowohl im
+                            Komparativ- als auch Superlativkontext angewendet werden.</li>
+                        <li>Gleichzeitig kann die wenig-spezifische Regel nicht mehr angewendet werden.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>ABC</h2>
+                    <ul>
+                        <li>Mit nur eine Regul für Komparativ, bilden wir einen ABB Muster</li>
+                        <li>Mit zwei spezifishce Regel bilden wir einen ABC Muster.</li>
+                        <li><span class='italic'>bonus ~ melior ~ optimus</span> (Lateinisch)</li>
+                    </ul>
+                    <ul style="list-style-type: none;">
+                        <li>√<span class='sc'>gut</span> ⇔ /optimus/ <span style="font-size: 1.5em;">|</span> <span
+                                class='sc'>___ komp ] supr ]</span></li>
+                        <li>√<span class='sc'>gut</span> ⇔ /mɛliɔ:/ <span style="font-size: 1.5em;">|</span> <span
+                                class='sc'>___ komp</span></li>
+                        <li>√<span class='sc'>gut</span> ⇔ /bonʊs/</li>
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <section class='title-slide slide level1'>
+                    <h1>Kasus</h1>
+                </section>
+                <section>
+                    <h2>Warum?</h2>
+                    <ul>
+                        <li>Es gibt ein Equivalent zu dem SSG.</li>
+                        <li><a class='citation'
+                                href='https://munin.uit.no/bitstream/handle/10037/2203/thesis.pdf?sequence=1'>Caha
+                                (2009)</a>
+                            hat gezeigt:</li>
+                    </ul>
+
+                    <img src="images/wk9_case_pred.png" alt="">
+
+                    <ul>
+                        <li>Die höhere Kasus wurden bei Präpositionen ausgedrückt.</li>
+                    </ul>
+
+                </section>
+                <section class="slide level2">
+                    <h2>Kasus</h2>
+                    <table>
+                        <!-- <caption></caption> -->
+                        <thead>
+                            <th>Pattern</th>
+                            <th><span class=italic>n </span>attested</th>
+                            <th>Example</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>AAA</td>
+                                <td>numerous</td>
+                                <td>Lezgian</td>
+                            </tr>
+                            <tr>
+                                <td>ABB</td>
+                                <td>57</td>
+                                <td>Indo-European</td>
+                            </tr>
+                            <tr>
+                                <td>ABC</td>
+                                <td>2</td>
+                                <td>Khinalugh</td>
+                            </tr>
+                            <tr>
+                                <td>AAB</td>
+                                <td>10</td>
+                                <td>Hunzib</td>
+                            </tr>
+                            <tr>
+                                <td>ABA</td>
+                                <td>---</td>
+                                <td>---</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class='whitespace'></p>
+                    <ul>
+                        <li>Mehr als 160 Sprachen.</li>
+                    </ul>
+
+
+                </section>
+                <section>
+                    <div id="map"></div>
+                    <!-- <h2>Map</h2> -->
+                    <script>
+                        initmap();
+
+                    </script>
+
+                </section>
+
+
+
+                <section class="slide level2">
+                    <h2>AAA Muster</h2>
+                    <table>
+                        <caption>AAA Muster im Kasussuppletion</caption>
+                        <thead>
+                            <th>Kasus 1</th>
+                            <th>Kasus 2</th>
+                            <th>Kasus 3</th>
+                            <th>Sprache</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>izú</td>
+                                <td>izu</td>
+                                <td>izu-s</td>
+                                <td>Tabasaran</td>
+                            </tr>
+                            <tr>
+                                <td>čun</td>
+                                <td>čna</td>
+                                <td>čaz</td>
+                                <td>Lezgian</td>
+                            </tr>
+                            <tr>
+                                <td>tā</td>
+                                <td>taī-le</td>
+                                <td>tā-lāi</td>
+                                <td>Nepali</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+
+                <section>
+                    <h2>ABB Muster</h2>
+                    <table>
+                        <caption>ABB Muster im Kasussuppletion<caption>
+                        <thead>
+                            <th>Kasus 1</th>
+                            <th>Kasus 2</th>
+                            <th>Kasus 3</th>
+                            <th>Language</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ol</td>
+                                <td>anɨ</td>
+                                <td>aɣaa</td>
+                                <td>Khakas</td>
+                            </tr>
+                            <tr>
+                                <td>mə</td>
+                                <td>dibi</td>
+                                <td>du-</td>
+                                <td>Hunzib</td>
+                            </tr>
+                            <tr>
+                                <td>àʔàŋ</td>
+                                <td>nkàtí</td>
+                                <td>kàtí</td>
+                                <td>Kadugli</td>
+                            </tr>
+                            <td>ʔa</td>
+                            <td>wit</td>
+                            <td>witib</td>
+                            <td>Pomo (SE)</td>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h2>ABC Muster</h2>
+                    <table>
+                        <caption>ABC Muster im Kasussuppletion</caption>
+                        <thead>
+                            <th>Kasus 1</th>
+                            <th>Kasus 2</th>
+                            <th>Kasus 3</th>
+                            <th>Language</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ajo</td>
+                                <td>(a)të</td>
+                                <td>asaj</td>
+                                <td>Albanian</td>
+                            </tr>
+                            <tr>
+                                <td>zɨ</td>
+                                <td>jä</td>
+                                <td>as(ɨr)</td>
+                                <td>Khinalugh</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h2>AAB Patterns</h2>
+                    <table>
+                        <caption>AAB Muster im Kasussuppletion</caption>
+                        <thead>
+                            <th>Kasus 1</th>
+                            <th>Kasus 2</th>
+                            <th>Kasus 3</th>
+                            <th>Sprache</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>woʔ</td>
+                                <td>woʔot</td>
+                                <td>weyaʔik</td>
+                                <td>Yurok</td>
+                            </tr>
+                            <tr>
+                                <td>niyi</td>
+                                <td>niyi-ngga</td>
+                                <td>nhoowoo</td>
+                                <td>Gooniyandi</td>
+                            </tr>
+                            <tr>
+                                <td>narnaj</td>
+                                <td>narnaj-bulu-yi</td>
+                                <td>wurrugu</td>
+                                <td>Wardaman</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section class="slide level2">
+                    <h2>Theorie</h2>
+                    <div class="container">
+                        <div class="col">
+                            <ul>
+                                <li>Wie Adjektive beinhalten höhere Kasus tiefere Kasus.</li>
+                                <li>z.B. Dativ beinhaltet Akkusativ und Nominativ, Akkustaiv beinhaltet Nominativ.</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <!-- <div class="mermaid">
+                                graph TD
+                                classDef empty fill:#ffffff,stroke-width:0px;
+                                A[DP] --- B[b]
+                                A --- C[Dative]
+                                B --- D[a]
+                                B --- E[Accusative]
+                                D --- F[Base]
+                                D --- G[Nominative]
+                                class A,B,C,D,E,F,G empty</div>
+                        </div> -->
+                        <div class='center-image'>
+                            <div>
+                                <object style='width: 90%;' data='images/wk11_case_cont.png'></object>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="slide level2">
+                    <h2>Beweis</h2>
+                    <ul>
+                        <li>Manchmal sehen wir transparent Containment im Kasus.</li>
+                    </ul>
+                    <!-- <p class="whitespace"></p> -->
+                    <table>
+                        <caption>Khanty Dat beinhaltet Akk</caption>
+                        <thead>
+                            <th></th>
+                            <th><span class="sc">Nominativ</span></th>
+                            <th><span class="sc">Akkusativ</span></th>
+                            <th><span class="sc">Dativ</span></th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="sc">1sg</span></td>
+                                <td>ma</td>
+                                <td>ma:-<span class="boldface">ne:m</span></td>
+                                <td>ma:-<span class="boldface">ne:m</span>-na</td>
+                            </tr>
+                            <tr>
+                                <td><span class="sc">3sg</span></td>
+                                <td>luw</td>
+                                <td>luw-<span class="boldface">e:l</span></td>
+                                <td>luw-<span class="boldface">e:l</span>-na</td>
+                            </tr>
+                            <tr>
+                                <td><span class="sc">1pl</span></td>
+                                <td>muŋ</td>
+                                <td>muŋ-<span class="boldface">-e:w</span></td>
+                                <td>muŋ-<span class="boldface">e:w</span>-na</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- <p class="whitespace"></p>
+                    <ul>
+                        <li><span class="boldface">Caveat</span>: these are few and far between.</li>
+                    </ul> -->
+                </section>
+
+                <section>
+                    <h2>Discussion</h2>
+                    <ul>
+                        <li>Keine ABA Muster im Kasus.</li>
+                        <li>Es gibt klare Beschränkungen auf Suppletion.</li>
+                        <li>Dies gilt für sowohl nominativ–akkustiv Systeme als auch ergativ–absolutiv Systeme.</li>
+                        <!-- <li><span class='boldface'>Important:</span> There is <span class='italic'>no</span> semantic
+                            justification for this.</li> -->
+                        <!-- <ul>
+                            <li>Remarkably few theories of case would attribute a semantics to case.</li>
+                        </ul> -->
+                    </ul>
+                </section>
+
+            </section>
+
+            <section>
+                <section class='title-slide slide level1'>
+                    <h1>Numerus</h1>
+                </section>
+
+                <section>
+                    <div id="map2"></div>
+
+                    <script>
+                        init_num_map();
+
+                    </script>
+                </section>
+
+
+                <section>
+                    <h2>AAA Muster</h2>
+                    <table>
+                        <caption>AAA Muster im Numerussuppletion</caption>
+                        <thead>
+                            <th>Singular</th>
+                            <th>Plural</th>
+                            <th>Dual</th>
+                            <th>Sprache</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>eymi</td>
+                                <td>eymün</td>
+                                <td>eymu</td>
+                                <td>Mapuche</td>
+                            </tr>
+                            <tr>
+                                <td>the:</td>
+                                <td>themele</td>
+                                <td>thizzi</td>
+                                <td>(N.) Qiang</td>
+                            </tr>
+                            <tr>
+                                <td>ray</td>
+                                <td>rom</td>
+                                <td>ræw</td>
+                                <td>Awtuw</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h2>ABB Muster</h2>
+                    <table>
+                        <caption>ABB Muster im Numerussuppletion</caption>
+                        <thead>
+                            <th>Singular</th>
+                            <th>Plural</th>
+                            <th>Dual</th>
+                            <th>Sprache</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>iou</td>
+                                <td>kimaha</td>
+                                <td>kimrau</td>
+                                <td>Kwamera</td>
+                            </tr>
+                            <tr>
+                                <td>ni:</td>
+                                <td>je:</td>
+                                <td>jin:</td>
+                                <td>Kham</td>
+                            </tr>
+                            <tr>
+                                <td>ray</td>
+                                <td>núúy</td>
+                                <td>nááy</td>
+                                <td>Yagua</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h2>ABC Muster</h2>
+                    <table>
+                        <caption>ABC Muster im Numerussuppletion</caption>
+                        <thead>
+                            <th>Singular</th>
+                            <th>Plural</th>
+                            <th>Dual</th>
+                            <th>Sprache</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ngo</td>
+                                <td>me</td>
+                                <td>qe</td>
+                                <td>Bilua</td>
+                            </tr>
+                            <tr>
+                                <td>n̪uwayi</td>
+                                <td>t̪anayi</td>
+                                <td>pulayi</td>
+                                <td>Pitta-Pitta</td>
+                            </tr>
+                            <tr>
+                                <td>ní</td>
+                                <td>íla/îkhéla</td>
+                                <td>kenet</td>
+                                <td>Mongsen Ao</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h2>AAB Muster</h2>
+                    <table>
+                        <caption>AAB Muster im Numerussuppletion</caption>
+                        <thead>
+                            <th>Singular</th>
+                            <th>Plural</th>
+                            <th>Dual</th>
+                            <th>Sprache</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>angeice</td>
+                                <td>angate</td>
+                                <td>nyido</td>
+                                <td>Dehu</td>
+                            </tr>
+                            <tr>
+                                <td>ngawu</td>
+                                <td>ngurruwani</td>
+                                <td>mirndiyani</td>
+                                <td>Wambaya</td>
+                            </tr>
+                            <tr>
+                                <td>jiy</td>
+                                <td>jiryéy</td>
+                                <td>sááda</td>
+                                <td>Yagua</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h2>Numerusmerkmale</h2>
+                    <ul>
+                        <li>Die Muster sagen, dass es Containment in Numerus auch gibt.</li>
+                        <li>Wir wissen schon, dass die Merkmale von Numerus sind:</li>
+                        <ul>
+                            <li>[±Singular]</li>
+                            <li>[±Plural]</li>
+                        </ul>
+                    </ul>
+                </section>
+
+                
+                <section>
+                <h2>Numerusstruktur</h2>
+                <div class='center-image'>
+                    <div>
+                        <object style='width: 70%;' data='images/wk11_numerus_Struktur.png'></object>
+                    </div>
+                </div>
+                </section>
+                
+                <section>
+                <h2>Containment im Sursurunga</h2>
+                <div class='center-image'>
+                    <div>
+                        <object style='width: 90%;' data='images/wk11_sursurunga_num.png'></object>
+                    </div>
+                </div>
+                </section>
+                
+                <section>
+                <h2>Containment im Manam</h2>
+                <div class='center-image'>
+                    <div>
+                        <object style='width: 90%;' data='images/wk11_manam_containment.png'></object>
+                    </div>
+                </div>
+                </section>
+                
+                <section>
+                <h2>Mögliche Problem</h2>
+                <ul>
+                    <li>Mit dieser Theorie gibt es eine Potentielle Problem.</li>
+                    <li>Warum gibt es keine ABA Muster?</li>
+                    <li>D.H.: was verhindert die Folgenden?:</li>
+                </ul>
+                <table>
+                    <caption>Hypothetisch ABA Muster im Numerus</caption>
+                    <thead>
+                        <th>Singular</th>
+                        <th>Plural</th>
+                        <th>Dual</th>
+                        <th></th>
+                    </thead>
+                    <tr>
+                        <td>ki</td>
+                        <td>an</td>
+                        <td>ki-ki</td>
+                        <td><span class='italic'>hypothetisch</span></td>
+                    </tr>
+                </table>
+                <p class='whitespace'></p>
+                <ul style="list-style-type: none;" class="fragment">
+                    <li>√<span class='sc'>basus</span> ⇔ /an/ | [−<span class='sc'>singular</span>,–<span class='sc'>minimal</span>]</li>
+                    <li>√<span class='sc'>basus</span> ⇔ /ki/</li>
+                </ul>
+                </section>
+                
+                <section>
+                <h2>Mögliche Problem</h2>
+                <ul>
+                    <li>Kurze Antwort: es gibt nichts, um dies zu verhindern.</li>
+                </ul>
+                <p class='whitespace'></p>
+                <div class='center-image fragment'>
+                    <div>
+                        <object style='width: 90%;' data='images/wk11_aba_num.png'></object>
+                    </div>
+                </div>
+                </section>
+                
+                <section>
+                <h2>Mögliche Problem</h2>
+                <ul>
+                    <li>Obwohl nichts ein ABA Muster im Numerus wie  verhindert, gibt es gutes Evidenz, dass die Gegenbeispiele mehr Kompliziert sind.</li>
+                    <li>Die Antwort wird im Markierheit begründet, aber wir müssen erst Suppletion im Person untersuchen, um die ganze Muster zu verstehen.</li>
+                    <li>Das machen wir nächste Woche.</li>
+                </ul>
+                </section>
+            </section>
+        </div>
+    </div>
+    <script src='js/reveal.js'></script>
+    <script>
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            // Display the page number of the current slide
+            slideNumber: true,
+            // Push each slide change to the browser history
+            history: true,
+            // Vertical centering of slides
+            center: false,
+            // Transition speed
+            transitionSpeed: 'slow', // default/fast/slow
+            viewDistance: 200,
+            menu: {
+                themes:
+                    [
+                        { name: 'Sof', theme: 'css/theme/sof.css' },
+                        { name: 'Moon', theme: 'css/theme/moon.css' },
+                        { name: 'Blood', theme: 'css/theme/blood.css' },
+                        { name: 'Beige', theme: 'css/theme/beige.css' },
+                        { name: 'Night', theme: 'css/theme/night.css' },
+                        { name: 'League', theme: 'css/theme/league.css' },
+                        { name: 'Serif', theme: 'css/theme/serif.css' },
+                        { name: 'Solarized', theme: 'css/theme/solarized.css' },
+                        { name: 'White', theme: 'css/theme/white.css' },
+                        { name: 'Sky', theme: 'css/theme/sky.css' },
+                    ]
+            },
+            // Optional reveal.js plugins
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+                { src: 'plugin/zoom-js/zoom.js', async: true },
+                { src: 'plugin/notes/notes.js', async: true },
+                { src: 'plugin/reveal.js-menu/menu.js' },
+            ]
+        });
+    </script>
+    <script src='js/mermaid.js'></script>
+    <script>
+        mermaid.initialize({
+            theme: 'forest',
+            logLevel: 3,
+            flowchart: { curve: 'basis' },
+        });
+    </script>
+</body>
+
+</html>
