@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='author' content='Pete'>
+    <title>Klusivität</title>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+    <meta name='viewport'
+        content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui'>
+    <link rel='stylesheet' href='css/reset.css'>
+    <link rel='stylesheet' href='css/reveal.css'>
+    <link rel='stylesheet' type='text/css' href='js/leaflet/leaflet.css' />
+    <script type='text/javascript' src='js/leaflet/leaflet.js'></script>
+    <script type='text/javascript' src='js/leaflet/leafletembed.js'></script>
+    <script type='text/javascript' src='js/leaflet/numbermap.js'></script>
+    <link rel='stylesheet' href='css/theme/sof.css' id='theme'>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <!--[if lt IE 9]>
+<script src='reveal.js/lib/js/html5shiv.js'></script>
+<![endif]-->
+    <link rel='stylesheet' href='css/additions.css'>
+    <link rel='stylesheet' href='css/linguistic-examples.css'>
+</head>
+
+<body>
+    <div class='reveal'>
+        <div class='slides'>
+            <section class='front' id='title-slide'>
+                <div class='front_container'>
+                    <div class='front_info'>
+                        <h1 class='title'>Klusivität</h1>
+                        <p class='subtitle'>Suppletion für Person</p>
+                        <p class='author'>Peter W. Smith</p>
+                        <p class='date'>7. Februar 2020</p>
+                    </div>
+                    <div class='front_logo'>
+                        <img class='logo' src='GU-Logo-schwarz.png'>
+                    </div>
+                </div>
+            </section>
+            <section>
+            <section class='title-slide slide level1'>
+            <h1>Einleitung</h1>
+            </section>
+            
+            <section>
+            <h2>*ABA</h2>
+            <ul>
+                <li>In den letzten Wochen haben wir geshen manche Fälle von *ABA.</li>
+                <li>*ABA bedeutet Suppletionmuster, wobei es nicht möglich ist, um Suppletion für eine bestimmte Kategorie zu haben, und dann keine Suppletion in komplexe Kategorien.</li>
+            </ul>
+            <table>
+                <caption>*ABA</caption>
+                <thead>
+                    <th>positiv</th>
+                    <th>komparativ</th>
+                    <th>superlativ</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>good</td>
+                        <td>better</td>
+                        <td>goodest</td>
+                    </tr>
+                </tbody>
+            </table>
+            </section>
+            
+            <section>
+            <h2>*ABA: Adjektive</h2>
+            <ul>
+                <li>Wir erklären *ABA durch VI und containment.</li>
+                <li class="fragment" data-fragment-index="2">Containment: der Superlativ enthält den Komparativ.</li>
+            </ul>
+            <div class='containerbaseline'>
+                    <div class='col fragment'>
+                        <object style='width: 50%;' data='images/wk10_pos.png'></object>
+                        <p style="font-size: 0.75em;">Positiv</p>
+                    </div>
+                    <div class="colgrow fragment">
+                        <object style='width: 80%;' data='images/wk10_pos_komp.png'></object>
+                        <p style="font-size: 0.75em;">Komparativ</p>
+                    </div>
+                    <div class="colgrow2 fragment">
+                        <object style='width: 75%;' data='images/wk10_supr.png'></object>
+                        <p style="font-size: 0.75em;">Superlativ</p>
+                    </div>
+                </div>
+            
+            </section>
+            
+            <section>
+            <h2>VI</h2>
+            <ul>
+                <li class="fragment" data-fragment-index="2">VI: man muß die meist spezifisch Regel benutzen</li>
+                <ul style="list-style-type: none;" class="fragment" data-fragment-index="2">
+                    <li>
+                        √<span class='sc'>gut</span> ⇔ /bɛtt/ | __ <span class='sc'>komp</span>
+                    </li>
+                    <li>√<span class='sc'>gut</span> ⇔ /gʊd/</li>
+                </ul>
+            </ul>
+            </section>
+            </section>
+        </div>
+    </div>
+    <script src='js/reveal.js'></script>
+    <script>
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            // Display the page number of the current slide
+            slideNumber: true,
+            // Push each slide change to the browser history
+            history: true,
+            // Vertical centering of slides
+            center: false,
+            // Transition speed
+            transitionSpeed: 'slow', // default/fast/slow
+            viewDistance: 200,
+            menu: {
+                themes:
+                    [
+                        { name: 'Sof', theme: 'css/theme/sof.css' },
+                        { name: 'Moon', theme: 'css/theme/moon.css' },
+                        { name: 'Blood', theme: 'css/theme/blood.css' },
+                        { name: 'Beige', theme: 'css/theme/beige.css' },
+                        { name: 'Night', theme: 'css/theme/night.css' },
+                        { name: 'League', theme: 'css/theme/league.css' },
+                        { name: 'Serif', theme: 'css/theme/serif.css' },
+                        { name: 'Solarized', theme: 'css/theme/solarized.css' },
+                        { name: 'White', theme: 'css/theme/white.css' },
+                        { name: 'Sky', theme: 'css/theme/sky.css' },
+                    ]
+            },
+            // Optional reveal.js plugins
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+                { src: 'plugin/zoom-js/zoom.js', async: true },
+                { src: 'plugin/notes/notes.js', async: true },
+                { src: 'plugin/reveal.js-menu/menu.js' },
+            ]
+        });
+    </script>
+    <script src='js/mermaid.js'></script>
+    <script>
+        mermaid.initialize({
+            theme: 'forest',
+            logLevel: 3,
+            flowchart: { curve: 'basis' },
+        });
+    </script>
+</body>
+
+</html>
